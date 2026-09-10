@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixa Brasil | Jonas Sena</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Jonas.Dev</div>
+            <ul class="nav-links">
+                <li><a href="index.html#inicio" data-i18n="nav_home">Início</a></li>
+                <li><a href="index.html#projetos" data-i18n="nav_projects">Projetos</a></li>
+                <li><a href="index.html#experiencia" data-i18n="nav_experience">Experiência</a></li>
+                <li><a href="index.html#contato" data-i18n="nav_contact">Contato</a></li>
+            </ul>
+            <div class="lang-buttons">
+                <button onclick="changeLanguage('pt')">PT</button>
+                <button onclick="changeLanguage('en')">EN</button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="project-page fade-in">
+        <a href="index.html#projetos" class="back-link"><i class="fa-solid fa-arrow-left"></i> <span data-i18n="btn_back">Voltar aos Projetos</span></a>
+
+        <div class="project-header">
+            <h1 data-i18n="proj2_title">Fixa Brasil</h1>
+            <div class="tags" style="justify-content: center;">
+                <span data-i18n="tag_unity3d">Unity3D</span>
+                <span data-i18n="tag_mobile">Mobile</span>
+                <span data-i18n="tag_multiplayer">Multiplayer</span>
+            </div>
+        </div>
+
+        <div class="project-video-container">
+            <iframe src="https://www.youtube.com/embed/COLOQUE_SEU_VIDEO_AQUI" title="Fixa Brasil Gameplay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="platform-links">
+            <a href="https://play.google.com/store/apps/details?id=com.santosgames.fixabr" target="_blank" class="platform-btn playstore">
+                <i class="fa-brands fa-google-play"></i> Google Play
+            </a>
+        </div>
+
+        <div class="project-details">
+            <p data-i18n="fixa_desc" style="font-size: 1.2rem; margin-bottom: 3rem;">
+                Jogo casual multiplayer em 3D focado na cultura de customização automotiva. Os jogadores podem rebaixar, modificar e personalizar seus carros e sistemas de som (paredões), além de importar suas próprias músicas para tocar durante o jogo. Tudo isso ambientado em um amplo mapa de mundo aberto inspirado nas ruas do Brasil.
+            </p>
+            
+            <h2 data-i18n="proj_resp_title">Minhas Responsabilidades</h2>
+            <ul data-i18n="fixa_resp_list" style="margin-bottom: 3rem; padding-left: 1.5rem; color: #c9d1d9; line-height: 1.8;">
+                <li>Correção de bugs e otimização de performance do jogo base logo após o lançamento.</li>
+                <li>Refatoração e organização da arquitetura de código pré-existente, aplicando princípios SOLID para facilitar a escalabilidade e manutenção.</li>
+                <li>Desenvolvimento e integração de um sistema de importação de arquivos de áudio locais, permitindo aos jogadores ouvirem suas próprias músicas nos carros.</li>
+                <li>Implementação do "Modo Foto" (Photo Mode) imersivo para os jogadores registrarem suas customizações.</li>
+                <li>Sincronização de todos os novos sistemas e mecânicas em tempo real para o modo multiplayer utilizando Unity Netcode for GameObjects.</li>
+            </ul>
+            
+            <h2 data-i18n="proj_exp_title">Minha Experiência</h2>
+            <p data-i18n="fixa_exp_text">
+                Ingressei neste projeto há pouco mais de duas semanas, coincidindo com o período pós-lançamento oficial. Como é um jogo recém-lançado com uma base de jogadores ativa e crescente, há um vasto escopo de funcionalidades a serem exploradas e adicionadas. Tem sido uma experiência extremamente recompensadora poder aplicar de forma direta e rápida a bagagem técnica e os conhecimentos de arquitetura que adquiri em projetos anteriores para estabilizar e expandir o jogo.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p data-i18n="footer_text">© 2026 Jonas Alves de Sena Neto. Construído com HTML, CSS e JS.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refúgio do Banzé | Jonas Sena</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Jonas.Dev</div>
+            <ul class="nav-links">
+                <li><a href="index.html#inicio" data-i18n="nav_home">Início</a></li>
+                <li><a href="index.html#projetos" data-i18n="nav_projects">Projetos</a></li>
+                <li><a href="index.html#experiencia" data-i18n="nav_experience">Experiência</a></li>
+                <li><a href="index.html#contato" data-i18n="nav_contact">Contato</a></li>
+            </ul>
+            <div class="lang-buttons">
+                <button onclick="changeLanguage('pt')">PT</button>
+                <button onclick="changeLanguage('en')">EN</button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="project-page fade-in">
+        <a href="index.html#projetos" class="back-link"><i class="fa-solid fa-arrow-left"></i> <span data-i18n="btn_back">Voltar aos Projetos</span></a>
+
+        <div class="project-header">
+            <h1 data-i18n="proj3_title">Refúgio do Banzé</h1>
+            <div class="tags" style="justify-content: center;">
+                <span data-i18n="tag_unity2d">Unity2D</span>
+                <span data-i18n="tag_mobile">Mobile</span>
+                <span data-i18n="tag_ui_prog">Programação de UI</span>
+                <span data-i18n="tag_tooling">Tooling</span>
+            </div>
+        </div>
+
+        <div class="project-video-container">
+            <iframe src="https://www.youtube.com/embed/COLOQUE_SEU_VIDEO_AQUI" title="Refúgio do Banzé Gameplay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="platform-links">
+            <a href="https://play.google.com/store/apps/details?id=com.BaladeiraStudio.RefugioDoBanze" target="_blank" class="platform-btn playstore">
+                <i class="fa-brands fa-google-play"></i> Google Play
+            </a>
+        </div>
+
+        <div class="project-details">
+            <p data-i18n="banze_desc" style="font-size: 1.2rem; margin-bottom: 3rem;">
+                Refúgio do Banzé é um jogo mobile 2D de Tower Defense (defesa de torre) com viés educacional, ambientado na época da colonização do Brasil. O objetivo central é defender o seu Mocambo contra os ataques dos invasores europeus. Para isso, o jogador precisa progredir pelos níveis, acumular recursos e fortalecer suas defesas construindo e aprimorando instalações. A cada nova conquista, o jogador enfrenta novos desafios e desbloqueia conteúdos históricos reais sobre esse importante momento do Brasil.
+            </p>
+            
+            <h2 data-i18n="proj_resp_title">Minhas Responsabilidades</h2>
+            <ul data-i18n="banze_resp_list" style="margin-bottom: 3rem; padding-left: 1.5rem; color: #c9d1d9; line-height: 1.8;">
+                <li>Desenvolvimento e implementação de novas funcionalidades na interface de usuário (UI), incluindo barras de progresso dinâmicas e sistemas de botões para compra de habilidades nas lojas.</li>
+                <li>Identificação e correção de bugs relacionados a mecânicas de gameplay e usabilidade da interface.</li>
+                <li>Integração contínua de assets de arte, animações 2D e efeitos de áudio na engine.</li>
+                <li>Adaptação e desenvolvimento de ferramentas de sistema para permitir que os Game Designers pudessem balancear o jogo de forma autônoma e independente.</li>
+                <li>Participação ativa em code reviews, garantindo a qualidade e a padronização do código da equipe.</li>
+            </ul>
+            
+            <h2 data-i18n="proj_exp_title">Minha Experiência</h2>
+            <p data-i18n="banze_exp_text">
+                Este projeto marcou meu primeiro contato prático com metodologias ágeis estruturadas, como a utilização do Git Flow e a participação em processos rigorosos de code review. Além do imenso aprendizado técnico e da imersão em boas práticas de versionamento em equipe, foi uma experiência riquíssima e gratificante poder contribuir para o desenvolvimento de um jogo com um propósito educacional voltado para a rica história do Brasil.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p data-i18n="footer_text">© 2026 Jonas Alves de Sena Neto. Construído com HTML, CSS e JS.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

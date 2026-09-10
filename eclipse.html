@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grau é Arte | Jonas Sena</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Jonas.Dev</div>
+            <ul class="nav-links">
+                <li><a href="index.html#inicio" data-i18n="nav_home">Início</a></li>
+                <li><a href="index.html#projetos" data-i18n="nav_projects">Projetos</a></li>
+                <li><a href="index.html#experiencia" data-i18n="nav_experience">Experiência</a></li>
+                <li><a href="index.html#contato" data-i18n="nav_contact">Contato</a></li>
+            </ul>
+            <div class="lang-buttons">
+                <button onclick="changeLanguage('pt')">PT</button>
+                <button onclick="changeLanguage('en')">EN</button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="project-page fade-in">
+        <a href="index.html#projetos" class="back-link"><i class="fa-solid fa-arrow-left"></i> <span data-i18n="btn_back">Voltar aos Projetos</span></a>
+
+        <div class="project-header">
+            <h1 data-i18n="proj1_title">Grau é Arte Online</h1>
+            <div class="tags" style="justify-content: center;">
+                <span data-i18n="tag_unity3d">Unity3D</span>
+                <span data-i18n="tag_mobile">Mobile</span>
+                <span data-i18n="tag_multiplayer">Multiplayer</span>
+            </div>
+        </div>
+
+        <div class="project-video-container">
+            <iframe src="https://www.youtube.com/embed/SEU_ID_DO_VIDEO_AQUI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="platform-links">
+            <a href="LINK_DA_PLAYSTORE" target="_blank" class="platform-btn playstore">
+                <i class="fa-brands fa-google-play"></i> Google Play
+            </a>
+            </div>
+
+        <div class="project-details">
+            <h2 data-i18n="proj_about_title">Sobre o Projeto</h2>
+            <p data-i18n="grau_about_text">Aqui você descreve o que é o Grau é Arte. Fale sobre o objetivo do jogo, o estilo, quantas pessoas jogam, e o que o torna especial no mercado de jogos mobile.</p>
+            
+            <h2 data-i18n="proj_exp_title">Minha Experiência e Contribuição</h2>
+            <p data-i18n="grau_exp_text">Aqui é onde você brilha. Conte exatamente os desafios que você enfrentou. Como você otimizou o multiplayer usando Unity Netcode? Quais foram os problemas de UI que você resolveu? Fale sobre a implementação da física de veículos.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p data-i18n="footer_text">© 2026 Jonas Alves de Sena Neto. Construído com HTML, CSS e JS.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

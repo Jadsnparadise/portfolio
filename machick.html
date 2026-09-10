@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machick | Jonas Sena</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Jonas.Dev</div>
+            <ul class="nav-links">
+                <li><a href="index.html#inicio" data-i18n="nav_home">Início</a></li>
+                <li><a href="index.html#projetos" data-i18n="nav_projects">Projetos</a></li>
+                <li><a href="index.html#experiencia" data-i18n="nav_experience">Experiência</a></li>
+                <li><a href="index.html#contato" data-i18n="nav_contact">Contato</a></li>
+            </ul>
+            <div class="lang-buttons">
+                <button onclick="changeLanguage('pt')">PT</button>
+                <button onclick="changeLanguage('en')">EN</button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="project-page fade-in">
+        <a href="index.html#projetos" class="back-link"><i class="fa-solid fa-arrow-left"></i> <span data-i18n="btn_back">Voltar aos Projetos</span></a>
+
+        <div class="project-header">
+            <h1 data-i18n="proj4_title">Machick</h1>
+            <div class="tags" style="justify-content: center;">
+                <span data-i18n="tag_unity2d">Unity2D</span>
+                <span data-i18n="tag_pc">PC</span>
+                <span data-i18n="tag_gameplay_prog">Programação de Gameplay</span>
+                <span data-i18n="tag_localization">Localização</span>
+                <span data-i18n="tag_audio_int">Integração de Áudio</span>
+            </div>
+        </div>
+
+        <div class="project-video-container">
+            <iframe src="https://www.youtube.com/embed/COLOQUE_SEU_VIDEO_AQUI" title="Machick Gameplay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="platform-links">
+            <a href="https://store.steampowered.com/app/2811200/Machick/" target="_blank" class="platform-btn" style="border-color: #66c0f4; color: #66c0f4;">
+                <i class="fa-brands fa-steam"></i> Steam
+            </a>
+        </div>
+
+        <div class="project-details">
+            <p data-i18n="machick_desc" style="font-size: 1.2rem; margin-bottom: 3rem;">
+                Derrote um exército fortemente armado de sapos anti-magia e liberte a floresta da destruição. Machick é um jogo casual (roguelite) onde você constrói suas próprias varinhas, sobrevive a hordas de inimigos, coleta XP e seleciona aprimoramentos para ir cada vez mais longe na jornada.
+            </p>
+            
+            <h2 data-i18n="proj_resp_title">Minhas Responsabilidades</h2>
+            <ul data-i18n="machick_resp_list" style="margin-bottom: 3rem; padding-left: 1.5rem; color: #c9d1d9; line-height: 1.8;">
+                <li>Desenvolvimento de sistemas core de gameplay, incluindo progressão de nível, geração procedural e controle de eventos de mapa, além das mecânicas de movimentação.</li>
+                <li>Implementação de algumas funções da interface de utilizador (UI) e estruturação de um sistema dinâmico de localização para suportar múltiplos idiomas.</li>                <li>Liderança e planejamento em conjunto com a equipe de som, atuando na integração técnica de todo o áudio na engine para garantir o "game feel" ideal.</li>
+                <li>Resolução de bugs complexos, polimento de gameplay e aprimoramento contínuo dos sistemas gerais do jogo.</li>
+            </ul>
+            
+            <h2 data-i18n="proj_exp_title">Minha Experiência</h2>
+            <p data-i18n="machick_exp_text">
+                Este foi um marco imenso na minha carreira por ser o meu primeiro jogo comercial lançado. Trabalhando em uma equipe indie dedicada, tive a oportunidade única de participar ativamente de todo o ciclo de vida do projeto: desde as reuniões iniciais de brainstorm e concepção da ideia, passando por todo o desenvolvimento pesado, até o suporte e envio de correções (patches) no pós-lançamento. Essa vivência ponta a ponta expandiu incrivelmente minha visão tanto técnica quanto de produto.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p data-i18n="footer_text">© 2026 Jonas Alves de Sena Neto. Construído com HTML, CSS e JS.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

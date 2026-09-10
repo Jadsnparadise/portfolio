@@ -1,0 +1,449 @@
+/* Variáveis de Cores (Tema Escuro) */
+:root {
+    --bg-color: #0d1117; /* Fundo principal escuro */
+    --surface-color: #161b22; /* Fundo secundário (cards) */
+    --text-color: #c9d1d9; /* Texto claro */
+    --accent-color: #58a6ff; /* Azul para destaques */
+    --accent-hover: #1f6feb; /* Azul escuro para hover */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; /* Rolagem suave ao clicar nos links */
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* --- Cabeçalho --- */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(13, 17, 23, 0.95);
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+    border-bottom: 1px solid #30363d;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--accent-color);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--accent-color);
+}
+
+.lang-buttons button {
+    background-color: transparent;
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+    padding: 0.3rem 0.8rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.lang-buttons button:hover {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+}
+
+/* --- Seções Globais --- */
+section {
+    padding: 100px 5% 50px;
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #fff;
+    border-left: 4px solid var(--accent-color);
+    padding-left: 10px;
+}
+
+.highlight {
+    color: var(--accent-color);
+}
+
+/* --- Início --- */
+.intro-wrapper {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente o texto com a foto */
+    justify-content: space-between;
+    gap: 3rem; /* Espaço entre o texto e a foto */
+}
+
+.intro-content {
+    flex: 1; /* Faz o texto ocupar o espaço restante */
+}
+
+.intro-content h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+}
+
+.intro-content h2 {
+    font-size: 2rem;
+    color: #8b949e;
+    margin-bottom: 1rem;
+}
+
+.intro-content p {
+    font-size: 1.1rem;
+    max-width: 650px;
+    color: #c9d1d9;
+}
+
+/* Estilos da Foto de Perfil */
+.intro-image {
+    flex-shrink: 0; /* Impede a foto de amassar */
+}
+
+.intro-image img {
+    width: 320px;
+    height: 320px;
+    object-fit: cover; /* Garante que a foto não fique esticada */
+    border-radius: 50%; /* Deixa a foto redonda (mude para 15px se quiser quadrada com cantos arredondados) */
+    border: 4px solid var(--accent-color); /* Borda com a cor de destaque do site */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Sombra suave para dar profundidade */
+}
+
+/* Responsividade (Para celulares e tablets) */
+@media (max-width: 900px) {
+    .intro-wrapper {
+        flex-direction: column-reverse; /* Coloca o texto embaixo e a foto em cima no celular */
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .intro-content p {
+        max-width: 100%; /* O texto ocupa 100% da tela no celular */
+        margin: 0 auto;
+    }
+
+    .intro-image img {
+        width: 220px; /* Reduz o tamanho da foto no celular */
+        height: 220px;
+    }
+
+    .intro-content h1 {
+        font-size: 3rem; /* Reduz um pouco o título no celular */
+    }
+}
+
+/* --- Habilidades --- */
+.skills-grid {
+    display: grid;
+    /* Reduzimos a largura mínima para 110px, deixando as caixas mais compactas */
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    gap: 1rem;
+}
+
+.skill-card {
+    background-color: var(--surface-color);
+    padding: 1.2rem 0.8rem; 
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #30363d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-card i {
+    font-size: 3rem; /* Ícones grandes novamente para dar mais destaque */
+    color: var(--accent-color);
+    margin-bottom: 0.8rem;
+}
+
+.skill-card p {
+    font-size: 0.9rem; 
+    font-weight: 600;
+    margin: 0; /* Remove margens extras do texto para não esticar a caixa */
+}
+
+/* CORREÇÃO: Bloco .skill-card:hover removido daqui para tirar o destaque */
+
+/* --- Projetos --- */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background-color: var(--surface-color);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #30363d;
+    
+    /* Novas propriedades adicionadas */
+    transition: transform 0.3s, border-color 0.3s;
+    cursor: pointer; /* Garante que o cursor vire uma mãozinha */
+    display: block; /* Necessário caso você transforme a div em link */
+    text-decoration: none; /* Remove o sublinhado caso seja um link */
+    color: inherit; /* Mantém a cor do texto original */
+}
+
+/* Novo efeito hover para os projetos */
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-color);
+}
+
+/* O contêiner principal das capas */
+.project-img {
+    width: 100%; /* Faz a imagem ocupar toda a largura do card */
+    height: 200px; /* Mantém a altura fixa padrão */
+    object-fit: cover; /* MÁGICA: Corta a imagem perfeitamente se ela não couber, sem achatar! */
+    display: block; /* Remove espaços em branco indesejados abaixo da imagem */
+    border-bottom: 1px solid #30363d; /* Cria uma linha divisória sutil entre a imagem e o texto */
+}
+
+/* Regra PADRÃO: Mantém as outras imagens centralizadas e sem cortar (como Banzé, Machick, Eclipse) */
+.project-img img {
+    width: 100%;     /* Força a preencher a largura */
+    height: 100%;    /* Força a preencher a altura (200px) */
+    display: block;  /* Remove espaços em branco indesejados abaixo da imagem */
+    object-fit: cover; /* A MÁGICA: Corta o excesso preenchendo o fundo sem distorcer! */
+    object-position: left; /* Garante que o corte foque no centro da imagem */
+}
+
+/* Regra ESPECÍFICA: Força apenas o Grau e o Fixa a preencherem 100% do fundo */
+.project-img img.img-fill {
+    max-height: none; /* Remove a limitação de 90% */
+    max-width: none;
+    width: 100%;      /* Força a preencher a largura */
+    height: 100%;     /* Força a preencher a altura */
+    object-fit: cover; /* Corta o excesso preenchendo o fundo sem distorcer */
+    object-position: center;
+}
+
+.project-info {
+    padding: 1.5rem;
+}
+
+.project-info h3 {
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+/* --- Tags dos Projetos --- */
+.tags {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap; /* Permite que as tags pulem para a linha de baixo quando faltar espaço */
+    gap: 0.5rem;
+}
+
+.tags span {
+    background-color: #21262d;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.75rem; /* Diminuí levemente a fonte para caber melhor */
+    color: var(--accent-color);
+    white-space: nowrap; /* Impede que o texto de uma única tag quebre no meio da palavra */
+}
+
+/* --- Experiência (Timeline) --- */
+.timeline {
+    border-left: 2px solid #30363d;
+    padding-left: 20px;
+    margin-left: 10px;
+}
+
+.timeline-item {
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -27px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+}
+
+.timeline-item h3 {
+    color: #fff;
+}
+
+.timeline-item .date {
+    font-size: 0.9rem;
+    color: var(--accent-color);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* --- Rodapé --- */
+footer {
+    text-align: center;
+    padding: 2rem;
+    border-top: 1px solid #30363d;
+    margin-top: 2rem;
+}
+
+/* --- Animação JS --- */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- Correção para os cards de Educação e Contato --- */
+#contato .skill-card {
+    display: block; /* Remove o Flexbox que estava forçando a centralização */
+    text-align: left; /* Garante o texto na esquerda */
+    padding: 2rem; /* Devolve um espaçamento interno maior, melhor para leitura de textos longos */
+}
+
+/* =========================================
+   ESTILOS DA PÁGINA ESPECÍFICA DO PROJETO 
+   ========================================= */
+
+.project-page {
+    padding-top: 120px; /* Dá um respiro para o cabeçalho fixo não cobrir o conteúdo */
+    max-width: 900px; /* Deixa o texto numa largura mais confortável para leitura */
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.3s;
+}
+
+.back-link:hover {
+    transform: translateX(-5px); /* Efeito legal de voltar */
+}
+
+.project-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.project-header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+/* Deixa o vídeo responsivo na proporção 16:9 */
+.project-video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Proporção mágica do 16:9 */
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    margin-bottom: 2rem;
+    border: 1px solid #30363d;
+}
+
+.project-video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.platform-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.platform-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--surface-color);
+    color: var(--text-color);
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid #30363d;
+    transition: all 0.3s;
+}
+
+.platform-btn i {
+    font-size: 1.2rem;
+}
+
+.platform-btn.playstore:hover {
+    border-color: #3bccff;
+    color: #3bccff;
+}
+
+.project-details h2 {
+    color: var(--accent-color);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.project-details p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    color: #c9d1d9;
+    line-height: 1.8;
+}
