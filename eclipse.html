@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grau é Arte | Jonas Sena</title>
+    <title data-i18n="page_title_eclipse">Eclipse: Shine of Dawn | Jonas Sena</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -20,8 +20,8 @@
                 <li><a href="index.html#contato" data-i18n="nav_contact">Contato</a></li>
             </ul>
             <div class="lang-buttons">
-                <button onclick="changeLanguage('pt')">PT</button>
-                <button onclick="changeLanguage('en')">EN</button>
+                <button data-lang="pt" onclick="changeLanguage('pt')">PT</button>
+                <button data-lang="en" onclick="changeLanguage('en')">EN</button>
             </div>
         </nav>
     </header>
@@ -30,30 +30,38 @@
         <a href="index.html#projetos" class="back-link"><i class="fa-solid fa-arrow-left"></i> <span data-i18n="btn_back">Voltar aos Projetos</span></a>
 
         <div class="project-header">
-            <h1 data-i18n="proj1_title">Grau é Arte Online</h1>
+            <h1 data-i18n="proj5_title">Eclipse: Shine of Dawn</h1>
             <div class="tags" style="justify-content: center;">
-                <span data-i18n="tag_unity3d">Unity3D</span>
-                <span data-i18n="tag_mobile">Mobile</span>
-                <span data-i18n="tag_multiplayer">Multiplayer</span>
+                <span data-i18n="tag_unity">Unity</span>
+                <span data-i18n="tag_pc">PC</span>
+                <span data-i18n="tag_gameplay_prog">Programação de Gameplay</span>
+                <span data-i18n="tag_audio_int">Integração de Áudio</span>
+                <span data-i18n="tag_navmesh">NavMesh IA</span>
             </div>
         </div>
 
         <div class="project-video-container">
-            <iframe src="https://www.youtube.com/embed/SEU_ID_DO_VIDEO_AQUI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/COLOQUE_SEU_VIDEO_AQUI" title="Eclipse: Shine of Dawn Gameplay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
-        <div class="platform-links">
-            <a href="LINK_DA_PLAYSTORE" target="_blank" class="platform-btn playstore">
-                <i class="fa-brands fa-google-play"></i> Google Play
-            </a>
-            </div>
-
         <div class="project-details">
-            <h2 data-i18n="proj_about_title">Sobre o Projeto</h2>
-            <p data-i18n="grau_about_text">Aqui você descreve o que é o Grau é Arte. Fale sobre o objetivo do jogo, o estilo, quantas pessoas jogam, e o que o torna especial no mercado de jogos mobile.</p>
+            <p data-i18n="eclipse_desc" style="font-size: 1.2rem; margin-bottom: 3rem;">
+                Eclipse: Shine of Dawn é um jogo de ação e aventura com foco em combate fluido e exploração. Desenvolvido para PC pela Iamandu Studios, o projeto traz uma ambientação rica e desafiadora com mecânicas dinâmicas de batalha contra criaturas místicas.
+            </p>
             
-            <h2 data-i18n="proj_exp_title">Minha Experiência e Contribuição</h2>
-            <p data-i18n="grau_exp_text">Aqui é onde você brilha. Conte exatamente os desafios que você enfrentou. Como você otimizou o multiplayer usando Unity Netcode? Quais foram os problemas de UI que você resolveu? Fale sobre a implementação da física de veículos.</p>
+            <h2 data-i18n="proj_resp_title">Minhas Responsabilidades</h2>
+            <ul data-i18n="eclipse_resp_list" style="margin-bottom: 3rem; padding-left: 1.5rem; color: #c9d1d9; line-height: 1.8;">
+                <li>Aprimoramento e polimento dos sistemas de combate corpo a corpo e movimentação responsiva do personagem principal.</li>
+                <li>Integração técnica e equalização de efeitos sonoros e ambientação na engine Unity para maximizar a imersão.</li>
+                <li>Implementação e refinamento da inteligência artificial de inimigos utilizando Unity NavMesh.</li>
+                <li>Resolução de bugs e otimização geral de performance e scripts para manter taxas de quadros estáveis em PC.</li>
+                <li>Representação oficial do estúdio e do jogo na Brasil Game Show (BGS) 2023, realizando demonstrações públicas e coletando feedback dos jogadores.</li>
+            </ul>
+            
+            <h2 data-i18n="proj_exp_title">Minha Experiência</h2>
+            <p data-i18n="eclipse_exp_text">
+                Atuar no desenvolvimento do Eclipse na Iamandu Studios foi fundamental para consolidar minhas habilidades em arquitetura de gameplay 3D e sistemas de combate. Além do ganho técnico direto com Unity NavMesh e integração de áudio, tive o privilégio de representar a equipe na BGS 2023, uma experiência transformadora de contato direto com o público gamer e coleta de impressões em tempo real.
+            </p>
         </div>
     </section>
 
@@ -61,6 +69,8 @@
         <p data-i18n="footer_text">© 2026 Jonas Alves de Sena Neto. Construído com HTML, CSS e JS.</p>
     </footer>
 
+    <script src="js/translations.js"></script>
+    <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

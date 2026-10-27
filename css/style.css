@@ -76,12 +76,17 @@ nav {
     cursor: pointer;
     border-radius: 4px;
     font-weight: bold;
-    transition: all 0.3s;
+    transition: all 0.25s ease;
 }
 
 .lang-buttons button:hover {
+    background-color: rgba(88, 166, 255, 0.2);
+}
+
+.lang-buttons button.active {
     background-color: var(--accent-color);
     color: var(--bg-color);
+    box-shadow: 0 0 12px rgba(88, 166, 255, 0.4);
 }
 
 /* --- Seções Globais --- */

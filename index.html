@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jonas Sena | Unity Game Developer</title>
+    <title data-i18n="page_title_home">Jonas Sena | Unity Game Developer</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
@@ -21,8 +21,8 @@
                 <li><a href="#contato" data-i18n="nav_contact">Contato</a></li>
             </ul>
             <div class="lang-buttons">
-                <button onclick="changeLanguage('pt')">PT</button>
-                <button onclick="changeLanguage('en')">EN</button>
+                <button data-lang="pt" onclick="changeLanguage('pt')">PT</button>
+                <button data-lang="en" onclick="changeLanguage('en')">EN</button>
             </div>
         </nav>
     </header>
@@ -155,13 +155,13 @@
             
             <div class="timeline-item">
                 <h3 data-i18n="exp1_title">Unity Game Developer - Santos Games</h3>
-                <span class="date">07/2024 - Presente</span>
+                <span class="date" data-i18n="exp1_date">07/2024 - Presente</span>
                 <p data-i18n="exp1_desc">Manutenção e implementação de features como física de veículos, sistemas de anúncios e UI. Implementação e otimização de multiplayer usando Unity Netcode for GameObjects e Relay.</p>
             </div>
 
             <div class="timeline-item">
                 <h3 data-i18n="exp2_title">Junior Unity Game Developer - Baladeira Studios</h3>
-                <span class="date">07/2024 - Presente</span>
+                <span class="date" data-i18n="exp2_date">07/2024 - Presente</span>
                 <p data-i18n="exp2_desc">Envolvimento direto no jogo Refúgio do Banzé, construindo ferramentas para Game Designers e refinando a programação de UI e gameplay.</p>
             </div>
 
@@ -200,6 +200,8 @@
         <p data-i18n="footer_text">© 2026 Jonas Alves de Sena Neto. Construído com HTML, CSS e JS.</p>
     </footer>
 
+    <script src="js/translations.js"></script>
+    <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
