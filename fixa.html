@@ -35,11 +35,19 @@
                 <span data-i18n="tag_unity3d">Unity3D</span>
                 <span data-i18n="tag_mobile">Mobile</span>
                 <span data-i18n="tag_multiplayer">Multiplayer</span>
+                <span data-i18n="tag_ad_system">Sistema de Anúncios</span>
+                <span data-i18n="tag_gameplay_prog">Programação de Gameplay</span>
+                <span data-i18n="tag_ui_prog">Programação de UI</span>
             </div>
         </div>
 
-        <div class="project-video-container">
-            <iframe src="https://www.youtube.com/embed/COLOQUE_SEU_VIDEO_AQUI" title="Fixa Brasil Gameplay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="project-videos-dual">
+            <div class="video-dual-main">
+                <iframe src="https://www.youtube-nocookie.com/embed/hEA-yZU6qTg?start=167" title="Fixa Brasil - Gameplay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="video-dual-short">
+                <iframe src="https://www.youtube-nocookie.com/embed/uUFmq8HakvA" title="Fixa Brasil - Shorts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
         </div>
 
         <div class="platform-links">
@@ -48,23 +56,59 @@
             </a>
         </div>
 
+        <div class="project-stats">
+            <div class="stat-item">
+                <span class="stat-number">+100k</span>
+                <span class="stat-label" data-i18n="fixa_stat_downloads">Downloads (Play Store)</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">+70k</span>
+                <span class="stat-label" data-i18n="fixa_stat_mau">Jogadores Mensais</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">+200k</span>
+                <span class="stat-label" data-i18n="fixa_stat_impressions">Impressões / Mês</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">Lead</span>
+                <span class="stat-label" data-i18n="fixa_stat_role">Resp. Técnico</span>
+            </div>
+        </div>
+
+        <div class="gallery-screens-2x2">
+            <div class="gallery-item">
+                <img src="images/fixa-screen-1.png" alt="Fixa Brasil - Garagem e Menu" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="images/fixa-screen-2.png" alt="Fixa Brasil - Monte seu Som" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="images/fixa-screen-3.png" alt="Fixa Brasil - Monte seu Personagem" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="images/fixa-screen-4.png" alt="Fixa Brasil - Jogue com os Amigos" loading="lazy">
+            </div>
+        </div>
+
         <div class="project-details">
             <p data-i18n="fixa_desc" style="font-size: 1.2rem; margin-bottom: 3rem;">
-                Jogo casual multiplayer em 3D focado na cultura de customização automotiva. Os jogadores podem rebaixar, modificar e personalizar seus carros e sistemas de som (paredões), além de importar suas próprias músicas para tocar durante o jogo. Tudo isso ambientado em um amplo mapa de mundo aberto inspirado nas ruas do Brasil.
+                Jogo casual multiplayer em 3D focado na cultura automotiva brasileira e imersão social, contando com mais de 100 mil downloads na Google Play, mais de 70 mil jogadores ativos mensais e uma média de 200 mil impressões de anúncios por mês. Atuo como Responsável Técnico do projeto desde o seu lançamento até o momento atual, liderando a manutenção contínua, arquitetura de sistemas, sistemas de sobrevivência e a criação de mecânicas comunitárias.
             </p>
             
-            <h2 data-i18n="proj_resp_title">Minhas Responsabilidades</h2>
+            <h2 data-i18n="proj_resp_title">Minhas Responsabilidades e Impactos</h2>
             <ul data-i18n="fixa_resp_list" style="margin-bottom: 3rem; padding-left: 1.5rem; color: #c9d1d9; line-height: 1.8;">
-                <li>Correção de bugs e otimização de performance do jogo base logo após o lançamento.</li>
-                <li>Refatoração e organização da arquitetura de código pré-existente, aplicando princípios SOLID para facilitar a escalabilidade e manutenção.</li>
-                <li>Desenvolvimento e integração de um sistema de importação de arquivos de áudio locais, permitindo aos jogadores ouvirem suas próprias músicas nos carros.</li>
-                <li>Implementação do "Modo Foto" (Photo Mode) imersivo para os jogadores registrarem suas customizações.</li>
-                <li>Sincronização de todos os novos sistemas e mecânicas em tempo real para o modo multiplayer utilizando Unity Netcode for GameObjects.</li>
+                <li><strong>Liderança Técnica e LiveOps:</strong> Atuação como Responsável Técnico desde o lançamento comercial do jogo, coordenando arquitetura escalável, estabilidade da aplicação, integração de SDKs de anúncios e Firebase Crashlytics.</li>
+                <li><strong>Sistema de Som Automotivo & Compartilhamento por Códigos:</strong> Criação de um sistema modular de customização de som com exportação e importação de projetos criados pelos jogadores via geração de códigos (utilizando serialização em JSON e Base64), proporcionando total liberdade criativa e forte engajamento da comunidade sem depender de armazenamento em nuvem.</li>
+                <li><strong>Sincronização Multiplayer & Persistência:</strong> Replicação em tempo real das customizações e caixas de som para todos os jogadores da sala via Unity Netcode, incluindo tratamento e validação contra códigos inválidos e persistência local das configurações do veículo.</li>
+                <li><strong>Modo Foto:</strong> Desenvolvimento de ferramentas de câmera e interface personalizada para captura e registro de screenshots das customizações dos carros.</li>
+                <li><strong>Sistema de Sobrevivência:</strong> Criação e integração de mecânicas de fome, sede (compra de suprimentos) e consumo dinâmico de combustível com necessidade de abastecimento em postos.</li>
+                <li><strong>Sistema de Entregas & Roleplay Social:</strong> Desenvolvimento de missões de entrega inspiradas em aplicativos de delivery, além de exploração da cidade a pé e possibilidade de entrar como passageiro nos veículos de outros jogadores no multiplayer.</li>
+                <li><strong>Pipeline de Áudio Local:</strong> Integração de leitor de áudio para carregar músicas diretamente do armazenamento do dispositivo do jogador para tocar no som do carro.</li>
             </ul>
             
             <h2 data-i18n="proj_exp_title">Minha Experiência</h2>
             <p data-i18n="fixa_exp_text">
-                Ingressei neste projeto há pouco mais de duas semanas, coincidindo com o período pós-lançamento oficial. Como é um jogo recém-lançado com uma base de jogadores ativa e crescente, há um vasto escopo de funcionalidades a serem exploradas e adicionadas. Tem sido uma experiência extremamente recompensadora poder aplicar de forma direta e rápida a bagagem técnica e os conhecimentos de arquitetura que adquiri em projetos anteriores para estabilizar e expandir o jogo.
+                Atuo como Responsável Técnico no Fixa Brasil desde o seu lançamento, participando ativamente da sua manutenção contínua e expansão de funcionalidades. Ver o jogo alcançar mais de 100 mil downloads e dezenas de milhares de usuários ativos mensais logo no início foi extremamente gratificante. Como é um jogo com uma base de jogadores ativa e crescente, há um vasto escopo de funcionalidades a serem exploradas e adicionadas. Tem sido uma experiência extremamente recompensadora poder aplicar de forma direta e rápida a bagagem técnica e os conhecimentos de arquitetura que adquiri em projetos anteriores para estabilizar e expandir o jogo.
             </p>
         </div>
     </section>

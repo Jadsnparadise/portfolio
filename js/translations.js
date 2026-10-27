@@ -21,7 +21,30 @@ const translations = {
         /* Seção Início / Apresentação */
         intro_hello: "Olá, eu sou o <span class='highlight'>Jonas Sena</span>",
         intro_role: "Unity Game Developer",
-        intro_desc: "Oi, eu sou o Jonas! Sou Unity Game Developer com 3 anos de experiência.<br><br>Atualmente estou trabalhando na Santos Games, desenvolvendo e mantendo os jogos Grau é Arte Online e Fixa Brasil. Além disso, atuo como freelancer na Baladeira Studios; meu último trabalho foi no jogo Refúgio do Banzé, onde atuei na programação de UI e correção de bugs.<br><br>Antes da Santos Games, trabalhei na DeadPixel Studios no jogo Machick. Não atuei apenas como programador, mas como parte essencial da equipe, participando ativamente de todo o processo criativo e técnico, desde a concepção da ideia até o seu lançamento.<br><br>Antes disso, estive na Iamandu Studios desenvolvendo sistemas para o jogo Eclipse: Shine of Dawn. Além da programação, tive um papel fundamental na representação do estúdio, realizando apresentações e exibições do jogo diretamente para o público em grandes eventos como a Brasil Game Show (BGS) em 2023.",
+        intro_desc: "Oi, eu sou o Jonas! Sou Unity Game Developer com 3 anos de experiência.<br><br>Atualmente estou trabalhando na Santos Games no jogo Fixa Brasil e em um novo projeto interno ainda não lançado, além de ter atuado anteriormente no Grau é Arte Online. Também atuo como freelancer na Baladeira Studios, onde contribuí no jogo Refúgio do Banzé com programação de UI e correção de bugs.<br><br>Anteriormente, atuei na DeadPixel Studios no desenvolvimento de dois grandes títulos: o roguelite Machick — participando de todo o processo criativo e técnico desde a concepção até o lançamento comercial — e o jogo de ação Eclipse: Shine of Dawn, onde desenvolvi a IA dos inimigos do zero e representei o estúdio apresentando o jogo diretamente ao público na Brasil Game Show (BGS) em 2023.",
+
+        /* Estatísticas Rápidas (Abaixo da Foto) */
+        stat_exp: "Anos de Experiência",
+        stat_projects: "Jogos Comerciais",
+
+        /* Habilidades Técnicas */
+        skills_title: "Competências Técnicas",
+        skill_unity: "Unity 2D/3D",
+        skill_csharp: "C#",
+        skill_gameplay: "Gameplay Programming",
+        skill_system_design: "System Design",
+        skill_event_driven: "Event-Driven Code",
+        skill_multiplayer: "Multiplayer",
+        skill_ui: "UI Programming",
+        skill_profiler: "Unity Profiler",
+        skill_memory: "Memory Profiler",
+        skill_mobile: "Mobile",
+        skill_pc: "PC",
+        skill_mobile_pc: "Mobile & PC",
+        skill_git: "Git",
+        skill_localization: "Localization Systems",
+        skill_ads: "Ads System",
+        skill_analytics: "Crashlytics / Analytics",
 
         /* Seção Projetos (Cards na Home) */
         title_projects: "Projetos em Destaque",
@@ -53,20 +76,21 @@ const translations = {
         tag_localization: "Localização",
         tag_audio_int: "Integração de Áudio",
         tag_audio: "Áudio",
+        tag_fmod: "FMOD",
         tag_navmesh: "NavMesh IA",
 
         /* Seção Experiência Profissional */
         title_experience: "Experiência Profissional",
         exp1_title: "Unity Game Developer - Santos Games",
         exp1_date: "07/2024 - Presente",
-        exp1_desc: "Manutenção e implementação de features como física de veículos, sistemas de anúncios e UI. Implementação e otimização de multiplayer usando Unity Netcode for GameObjects e Relay.",
+        exp1_desc: "Desenvolvimento de novo projeto interno e manutenção contínua do Fixa Brasil. Anteriormente, atuei na implementação de física de veículos, sistemas de anúncios e otimização de multiplayer com Unity Netcode no Grau é Arte Online.",
         exp2_title: "Junior Unity Game Developer - Baladeira Studios",
         exp2_date: "07/2024 - Presente",
         exp2_desc: "Envolvimento direto no jogo Refúgio do Banzé, construindo ferramentas para Game Designers e refinando a programação de UI e gameplay.",
         exp3_title: "Unity Game Developer - DeadPixel Studios",
         exp3_desc: "Membro fundador da equipe do jogo Machick. Gerenciamento do ciclo completo, controle de mapas, UI, localização e integração de áudio ponta a ponta.",
-        exp4_title: "Unity Game Developer - Iamandu Studios",
-        exp4_desc: "Representação do jogo Eclipse na BGS. Integração de sistemas de áudio e otimização de mecânicas de combate e movimentação.",
+        exp4_title: "Unity Game Developer - DeadPixel Studios",
+        exp4_desc: "Desenvolvimento da IA dos inimigos do zero (State Machine, NavMesh, IK) e integração técnica de áudio com FMOD para o jogo Eclipse: Shine of Dawn. Apresentação oficial do jogo na BGS 2023.",
 
         /* Seção Educação e Contato */
         title_contact: "Educação e Contato",
@@ -82,34 +106,48 @@ const translations = {
 
         /* Textos Comuns das Páginas de Detalhes de Projetos */
         btn_back: "Voltar aos Projetos",
-        proj_resp_title: "Minhas Responsabilidades",
+        btn_website: "Site Oficial",
+        video_trailer: "Trailer Oficial",
+        video_gameplay: "Trailer de Gameplay",
+        proj_resp_title: "Minhas Responsabilidades e Impactos",
         proj_exp_title: "Minha Experiência",
         proj_about_title: "Sobre o Projeto",
 
+        /* Estatísticas de Projetos */
+        grau_stat_downloads: "Downloads (Lojas)",
+        grau_stat_mau: "Jogadores Mensais",
+        grau_stat_impressions: "Impressões / Mês",
+        grau_stat_lead: "Resp. Técnico",
+
+        fixa_stat_downloads: "Downloads (Play Store)",
+        fixa_stat_mau: "Jogadores Mensais",
+        fixa_stat_impressions: "Impressões / Mês",
+        fixa_stat_role: "Resp. Técnico",
+
         /* --- Projeto: Grau é Arte Online --- */
-        grau_desc: "Jogo casual multiplayer em 3D focado na cultura do motociclismo. Nele, os jogadores podem realizar manobras, ganhar dinheiro fazendo entregas, modificar e personalizar suas motos na oficina, além de comprar, vender ou alugar veículos. O jogo oferece diversos mapas inspirados no Brasil e permite forte interação social através de chat e encontros virtuais com outros jogadores.",
-        grau_resp_list: "<li>Melhoria e adição de novas mecânicas de manobras utilizando Cinemática Inversa (IK), física 3D e geometria analítica.</li><li>Refatoração e organização da base de código pré-existente, aplicando princípios SOLID para maior escalabilidade.</li><li>Desenvolvimento de sistemas de entrega que simulam aplicativos reais, ciclo dinâmico de dia e noite, e mecânicas de sobrevivência (fome e sede).</li><li>Sincronização de todos os sistemas em tempo real para o modo multiplayer utilizando Unity Netcode for GameObjects.</li><li>Integração do Firebase Crashlytics para monitoramento e resolução de falhas estruturais.</li><li>Identificação e correção de gargalos de scripts e renderização utilizando o Unity Profiler, melhorando a performance geral.</li>",
-        grau_exp_text: "Estou trabalhando neste projeto há 1 ano e 8 meses e tem sido uma jornada de imenso aprendizado. No início, foi um grande desafio, pois eu ainda não havia trabalhado com jogos multiplayer e nem com desenvolvimento focado em plataformas mobile. Ter a oportunidade de aprimorar minhas habilidades nessas duas áreas simultaneamente foi fantástico. Além disso, pude ter contato prático e dominar diversas ferramentas cruciais para a indústria atual de jogos, como SDKs de monetização (Ads), Firebase e Unity Netcode.",
+        grau_desc: "Jogo casual multiplayer em 3D focado na cultura do motociclismo com mais de 2 milhões de downloads somados na Google Play e App Store, mantendo uma média de mais de 200 mil jogadores ativos mensais e mais de 1 milhão de impressões de anúncios por mês. Atuei como Responsável Técnico do projeto por mais de 2 anos e meio, liderando o desenvolvimento técnico, otimizações críticas, mecânicas sociais de roleplay e atualizações mensais de conteúdo.",
+        grau_resp_list: "<li><strong>Escala e Liderança Técnica:</strong> Atuei como Responsável Técnico do jogo por mais de 2 anos e meio, liderando a arquitetura técnica, direcionamento das entregas e escalabilidade do codebase com princípios SOLID.</li><li><strong>Crescimento de +100% na Receita de Anúncios:</strong> Entrega contínua de atualizações mensais de alto impacto com mecânicas inovadoras que diferenciaram o título no nicho de mercado, trabalhando alinhado à equipe de marketing para mais que dobrar a receita de ads.</li><li><strong>Sistema de Entregas & Roleplay Social:</strong> Desenvolvimento de um sistema de entregas simulando aplicativos reais de delivery de comida e encomendas. Expandi a experiência para além da pilotagem, permitindo aos jogadores saírem dos veículos, andarem livremente pela cidade a pé e interagirem socialmente — incluindo a possibilidade de subir como passageiro no veículo de outros jogadores.</li><li><strong>Ganho de Performance (+15 FPS) e Zero GC Alloc:</strong> Utilização do Unity Profiler para refatoração e otimização de scripts críticos, adotando arquitetura orientada a eventos (Event-Driven) e zerando alocações na Garbage Collection (zero GC Alloc) em loops recorrentes, gerando saltos de até 15 FPS em múltiplos aparelhos móveis.</li><li><strong>Otimização Extrema de Memória (-60%):</strong> Diagnóstico profundo através do Unity Memory Profiler e Memory Snapshots, otimizando shaders, materiais e compressão de texturas, reduzindo o consumo de memória RAM de 1.32 GB para 0.51 GB.</li><li><strong>Estabilidade com Crashlytics (+30% Sessões Sem Falhas):</strong> Integração e acompanhamento ativo do Firebase Crashlytics em produção, aumentando em 30% as sessões livres de falhas e acelerando drasticamente o diagnóstico e a resolução de bugs.</li><li><strong>Multiplayer em Tempo Real & Física:</strong> Sincronização em tempo real de gameplay, passageiros e customizações via Unity Netcode for GameObjects, além de mecânicas de manobras realistas com IK, física 3D e geometria analítica.</li>",
+        grau_exp_text: "Trabalhei como Responsável Técnico neste projeto por mais de 2 anos e meio e foi uma experiência transformadora. Assumir a liderança técnica de um jogo já lançado com mais de 2 milhões de downloads e mais de 200 mil jogadores mensais me deu uma bagagem sólida em LiveOps, otimização extrema sob restrições severas de hardware mobile e tomada de decisão estratégica alinhada com métricas de negócio. Além das otimizações pesadas de CPU e memória, foi muito enriquecedor transformar o jogo em uma plataforma social e de roleplay: a introdução do sistema de entregas e a capacidade de andar a pé e ser passageiro de outros jogadores expandiram drasticamente a retenção e a imersão da comunidade.",
 
         /* --- Projeto: Fixa Brasil --- */
-        fixa_desc: "Jogo casual multiplayer em 3D focado na cultura de customização automotiva. Os jogadores podem rebaixar, modificar e personalizar seus carros e sistemas de som (paredões), além de importar suas próprias músicas para tocar durante o jogo. Tudo isso ambientado em um amplo mapa de mundo aberto inspirado nas ruas do Brasil.",
-        fixa_resp_list: "<li>Correção de bugs e otimização de performance do jogo base logo após o lançamento.</li><li>Refatoração e organização da arquitetura de código pré-existente, aplicando princípios SOLID para facilitar a escalabilidade e manutenção.</li><li>Desenvolvimento e integração de um sistema de importação de arquivos de áudio locais, permitindo aos jogadores ouvirem suas próprias músicas nos carros.</li><li>Implementação do 'Modo Foto' (Photo Mode) imersivo para os jogadores registrarem suas customizações.</li><li>Sincronização de todos os novos sistemas e mecânicas em tempo real para o modo multiplayer utilizando Unity Netcode for GameObjects.</li>",
-        fixa_exp_text: "Ingressei neste projeto há pouco mais de duas semanas, coincidindo com o período pós-lançamento oficial. Como é um jogo recém-lançado com uma base de jogadores ativa e crescente, há um vasto escopo de funcionalidades a serem exploradas e adicionadas. Tem sido uma experiência extremamente recompensadora poder aplicar de forma direta e rápida a bagagem técnica e os conhecimentos de arquitetura que adquiri em projetos anteriores para estabilizar e expandir o jogo.",
+        fixa_desc: "Jogo casual multiplayer em 3D focado na cultura automotiva brasileira e imersão social, contando com mais de 100 mil downloads na Google Play, mais de 70 mil jogadores ativos mensais e uma média de 200 mil impressões de anúncios por mês. Atuo como Responsável Técnico do projeto desde o seu lançamento até o momento atual, liderando a manutenção contínua, arquitetura de sistemas, sistemas de sobrevivência e a criação de mecânicas comunitárias.",
+        fixa_resp_list: "<li><strong>Liderança Técnica e LiveOps:</strong> Atuação como Responsável Técnico desde o lançamento comercial do jogo, coordenando arquitetura escalável, estabilidade da aplicação, integração de SDKs de anúncios e Firebase Crashlytics.</li><li><strong>Sistema de Som Automotivo & Compartilhamento por Códigos:</strong> Criação de um sistema modular de customização de som com exportação e importação de projetos criados pelos jogadores via geração de códigos (utilizando serialização em JSON e Base64), proporcionando total liberdade criativa e forte engajamento da comunidade sem depender de armazenamento em nuvem.</li><li><strong>Sincronização Multiplayer & Persistência:</strong> Replicação em tempo real das customizações e caixas de som para todos os jogadores da sala via Unity Netcode, incluindo tratamento e validação contra códigos inválidos e persistência local das configurações do veículo.</li><li><strong>Modo Foto:</strong> Desenvolvimento de ferramentas de câmera e interface personalizada para captura e registro de screenshots das customizações dos carros.</li><li><strong>Sistema de Sobrevivência:</strong> Criação e integração de mecânicas de fome, sede (compra de suprimentos) e consumo dinâmico de combustível com necessidade de abastecimento em postos.</li><li><strong>Sistema de Entregas & Roleplay Social:</strong> Desenvolvimento de missões de entrega inspiradas em aplicativos de delivery, além de exploração da cidade a pé e possibilidade de entrar como passageiro nos veículos de outros jogadores no multiplayer.</li><li><strong>Pipeline de Áudio Local:</strong> Integração de leitor de áudio para carregar músicas diretamente do armazenamento do dispositivo do jogador para tocar no som do carro.</li>",
+        fixa_exp_text: "Atuo como Responsável Técnico no Fixa Brasil desde o seu lançamento, participando ativamente da sua manutenção contínua e expansão de funcionalidades. Ver o jogo alcançar mais de 100 mil downloads e dezenas de milhares de usuários ativos mensais logo no início foi extremamente gratificante. Como é um jogo com uma base de jogadores ativa e crescente, há um vasto escopo de funcionalidades a serem exploradas e adicionadas. Tem sido uma experiência extremamente recompensadora poder aplicar de forma direta e rápida a bagagem técnica e os conhecimentos de arquitetura que adquiri em projetos anteriores para estabilizar e expandir o jogo.",
 
         /* --- Projeto: Refúgio do Banzé --- */
         banze_desc: "Refúgio do Banzé é um jogo mobile 2D de Tower Defense (defesa de torre) com viés educacional, ambientado na época da colonização do Brasil. O objetivo central é defender o seu Mocambo contra os ataques dos invasores europeus. Para isso, o jogador precisa progredir pelos níveis, acumular recursos e fortalecer suas defesas construindo e aprimorando instalações. A cada nova conquista, o jogador enfrenta novos desafios e desbloqueia conteúdos históricos reais sobre esse importante momento do Brasil.",
-        banze_resp_list: "<li>Desenvolvimento e implementação de novas funcionalidades na interface de usuário (UI), incluindo barras de progresso dinâmicas e sistemas de botões para compra de habilidades nas lojas.</li><li>Identificação e correção de bugs relacionados a mecânicas de gameplay e usabilidade da interface.</li><li>Integração contínua de assets de arte, animações 2D e efeitos de áudio na engine.</li><li>Adaptação e desenvolvimento de ferramentas de sistema para permitir que os Game Designers pudessem balancear o jogo de forma autônoma e independente.</li><li>Participação ativa em code reviews, garantindo a qualidade e a padronização do código da equipe.</li>",
+        banze_resp_list: "<li>Desenvolvimento e implementação de novas funcionalidades na interface de usuário (UI), incluindo barras de progresso dinâmicas e sistemas de botões para compra de habilidades nas lojas.</li><li>Identificação e correção de bugs relacionados a mecânicas de gameplay e usabilidade da interface.</li><li>Integração contínua de assets de arte, animações 2D e efeitos de áudio na engine.</li><li>Adaptação e desenvolvimento de ferramentas de sistema para permitir que os Game Designers pudessem balancear o jogo de forma autônoma e independente.</li><li>Colaboração direta com desenvolvedores, artistas, designers e producers, alinhando implementação técnica, arte e balanceamento de jogo.</li><li>Participação ativa em code reviews, garantindo a qualidade e a padronização do código da equipe.</li>",
         banze_exp_text: "Este projeto marcou meu primeiro contato prático com metodologias ágeis estruturadas, como a utilização do Git Flow e a participação em processos rigorosos de code review. Além do imenso aprendizado técnico e da imersão em boas práticas de versionamento em equipe, foi uma experiência riquíssima e gratificante poder contribuir para o desenvolvimento de um jogo com um propósito educacional voltado para a rica história do Brasil.",
 
         /* --- Projeto: Machick --- */
         machick_desc: "Derrote um exército fortemente armado de sapos anti-magia e liberte a floresta da destruição. Machick é um jogo casual (roguelite) onde você constrói suas próprias varinhas, sobrevive a hordas de inimigos, coleta XP e seleciona aprimoramentos para ir cada vez mais longe na jornada.",
-        machick_resp_list: "<li>Desenvolvimento de sistemas core de gameplay, incluindo progressão de nível, geração procedural e controle de eventos de mapa, além das mecânicas de movimentação.</li><li>Implementação de algumas funções da interface de usuário (UI) e estruturação de um sistema dinâmico de localização para suportar múltiplos idiomas.</li><li>Liderança e planejamento em conjunto com a equipe de som, atuando na integração técnica de todo o áudio na engine para garantir o 'game feel' ideal.</li><li>Resolução de bugs complexos, polimento de gameplay e aprimoramento contínuo dos sistemas gerais do jogo.</li>",
+        machick_resp_list: "<li>Desenvolvimento de sistemas core de gameplay, incluindo progressão de nível, geração procedural e controle de eventos de mapa, além das mecânicas de movimentação.</li><li>Implementação de algumas funções da interface de usuário (UI) e estruturação de um sistema dinâmico de localização para suportar múltiplos idiomas.</li><li>Liderança e planejamento em conjunto com a equipe de som, atuando na integração técnica de todo o áudio na engine para garantir o 'game feel' ideal.</li><li>Colaboração direta e próxima com outros desenvolvedores, artistas, designers e producers durante todo o ciclo de produção até o lançamento comercial.</li><li>Resolução de bugs complexos, polimento de gameplay e aprimoramento contínuo dos sistemas gerais do jogo.</li>",
         machick_exp_text: "Este foi um marco imenso na minha carreira por ser o meu primeiro jogo comercial lançado. Trabalhando em uma equipe indie dedicada, tive a oportunidade única de participar ativamente de todo o ciclo de vida do projeto: desde as reuniões iniciais de brainstorm e concepção da ideia, passando por todo o desenvolvimento pesado, até o suporte e envio de correções (patches) no pós-lançamento. Essa vivência ponta a ponta expandiu incrivelmente minha visão tanto técnica quanto de produto.",
 
         /* --- Projeto: Eclipse: Shine of Dawn --- */
-        eclipse_desc: "Eclipse: Shine of Dawn é um jogo de ação e aventura com foco em combate fluido e exploração. Desenvolvido para PC pela Iamandu Studios, o projeto traz uma ambientação rica e desafiadora com mecânicas dinâmicas de batalha contra criaturas místicas.",
-        eclipse_resp_list: "<li>Aprimoramento e polimento dos sistemas de combate corpo a corpo e movimentação responsiva do personagem principal.</li><li>Integração técnica e equalização de efeitos sonoros e ambientação na engine Unity para maximizar a imersão.</li><li>Implementação e refinamento da inteligência artificial de inimigos utilizando Unity NavMesh.</li><li>Resolução de bugs e otimização geral de performance e scripts para manter taxas de quadros estáveis em PC.</li><li>Representação oficial do estúdio e do jogo na Brasil Game Show (BGS) 2023, realizando demonstrações públicas e coletando feedback dos jogadores.</li>",
-        eclipse_exp_text: "Atuar no desenvolvimento do Eclipse na Iamandu Studios foi fundamental para consolidar minhas habilidades em arquitetura de gameplay 3D e sistemas de combate. Além do ganho técnico direto com Unity NavMesh e integração de áudio, tive o privilégio de representar a equipe na BGS 2023, uma experiência transformadora de contato direto com o público gamer e coleta de impressões em tempo real."
+        eclipse_desc: "Eclipse: Shine of Dawn é um jogo de ação e aventura com foco em combate fluido e exploração. Desenvolvido para PC pela DeadPixel Studios, o projeto traz uma ambientação rica e desafiadora com mecânicas dinâmicas de batalha contra criaturas místicas.",
+        eclipse_resp_list: "<li>Desenvolvimento da IA dos inimigos do zero junto à equipe, arquitetando e implementando comportamentos através de State Machine, NavMesh e IK.</li><li>Correção e polimento de bugs críticos e impeditivos no combate do primeiro boss.</li><li>Integração técnica de áudios e efeitos sonoros utilizando FMOD.</li><li>Colaboração direta e multidisciplinar com outros desenvolvedores, artistas, designers e producers no alinhamento de escopo, arte e mecânicas.</li><li>Apresentação do jogo ao público junto à equipe no maior evento de jogos da América Latina, a Brasil Game Show (BGS).</li><li>Participação em podcasts e criação de conteúdo para divulgação do projeto em mídias sociais.</li>",
+        eclipse_exp_text: "Foi minha primeira experiência profissional e um grande marco no meu desenvolvimento como desenvolvedor. Por ser um codebase robusto e em equipe, aprendi imensamente lendo, estudando e participando de code reviews com meus colegas de trabalho. Além do grande salto técnico em sistemas e IA, foi muito gratificante poder contribuir não apenas na programação, mas também apresentar o jogo ao público na BGS e ajudar a construir a comunidade do projeto."
     },
 
     en: {
@@ -130,7 +168,30 @@ const translations = {
         /* Intro Section */
         intro_hello: "Hi, I'm <span class='highlight'>Jonas Sena</span>",
         intro_role: "Unity Game Developer",
-        intro_desc: "Hi, I'm Jonas! I'm a Unity Game Developer with 3 years of experience.<br><br>Currently, I work at Santos Games, developing and maintaining Grau é Arte Online and Fixa Brasil. Additionally, I work as a freelancer at Baladeira Studios; my latest project was Refúgio do Banzé, where I worked on UI programming and bug fixing.<br><br>Before Santos Games, I worked at DeadPixel Studios on the game Machick. I wasn't just a programmer, but an essential part of the team, actively participating in the entire creative and technical process, from the idea's conception to its launch.<br><br>Prior to that, I worked at Iamandu Studios developing systems for Eclipse: Shine of Dawn. Besides programming, I played a key role in representing the studio, presenting and showcasing the game directly to the public at major events like the Brasil Game Show (BGS) in 2023.",
+        intro_desc: "Hi, I'm Jonas! I'm a Unity Game Developer with 3 years of experience.<br><br>Currently, I work at Santos Games developing and maintaining Fixa Brasil and an unannounced internal project, having previously worked on Grau é Arte Online. I also work as a freelancer at Baladeira Studios, where I contributed to Refúgio do Banzé with UI programming and bug fixing.<br><br>Previously, I worked at DeadPixel Studios on two major titles: the roguelite Machick — participating in the full creative and technical cycle from concept to commercial launch — and the action game Eclipse: Shine of Dawn, where I built enemy AI from scratch and represented the studio showcasing the game to the public at Brasil Game Show (BGS) in 2023.",
+
+        /* Quick Stats (Below Photo) */
+        stat_exp: "Years Experience",
+        stat_projects: "Commercial Games",
+
+        /* Technical Skills */
+        skills_title: "Technical Skills",
+        skill_unity: "Unity 2D/3D",
+        skill_csharp: "C#",
+        skill_gameplay: "Gameplay Programming",
+        skill_system_design: "System Design",
+        skill_event_driven: "Event-Driven Code",
+        skill_multiplayer: "Multiplayer",
+        skill_ui: "UI Programming",
+        skill_profiler: "Unity Profiler",
+        skill_memory: "Memory Profiler",
+        skill_mobile: "Mobile",
+        skill_pc: "PC",
+        skill_mobile_pc: "Mobile & PC",
+        skill_git: "Git",
+        skill_localization: "Localization Systems",
+        skill_ads: "Ads System",
+        skill_analytics: "Crashlytics / Analytics",
 
         /* Projects Section (Home Cards) */
         title_projects: "Featured Projects",
@@ -162,20 +223,21 @@ const translations = {
         tag_localization: "Localization",
         tag_audio_int: "Audio Integration",
         tag_audio: "Audio",
+        tag_fmod: "FMOD",
         tag_navmesh: "NavMesh AI",
 
         /* Professional Experience Section */
         title_experience: "Professional Experience",
         exp1_title: "Unity Game Developer - Santos Games",
         exp1_date: "07/2024 - Present",
-        exp1_desc: "Responsible for feature implementation (vehicle physics, ads, UI) and multiplayer systems using Unity Netcode for GameObjects and Relay.",
+        exp1_desc: "Developing an unannounced internal project and maintaining Fixa Brasil. Previously worked on vehicle physics, ads, and multiplayer with Unity Netcode on Grau é Arte Online.",
         exp2_title: "Junior Unity Game Developer - Baladeira Studios",
         exp2_date: "07/2024 - Present",
         exp2_desc: "Directly involved in the development of Refúgio do Banzé, building tools for Game Designers and polishing UI and gameplay.",
         exp3_title: "Unity Game Developer - DeadPixel Studios",
         exp3_desc: "Founding team member for Machick. Managed full-cycle development, map control, UI, localization, and end-to-end audio integration.",
-        exp4_title: "Unity Game Developer - Iamandu Studios",
-        exp4_desc: "Represented the game Eclipse at BGS. Integrated audio systems and optimized combat and movement mechanics.",
+        exp4_title: "Unity Game Developer - DeadPixel Studios",
+        exp4_desc: "Enemy AI architecture (State Machine, NavMesh, IK) and audio integration with FMOD for Eclipse: Shine of Dawn. Officially represented the studio at BGS 2023.",
 
         /* Education & Contact Section */
         title_contact: "Education & Contact",
@@ -191,33 +253,47 @@ const translations = {
 
         /* Common Project Details Page Texts */
         btn_back: "Back to Projects",
-        proj_resp_title: "My Responsibilities",
+        btn_website: "Official Website",
+        video_trailer: "Official Trailer",
+        video_gameplay: "Gameplay Trailer",
+        proj_resp_title: "My Responsibilities & Impact",
         proj_exp_title: "My Experience",
         proj_about_title: "About the Project",
 
+        /* Project Stats */
+        grau_stat_downloads: "Total Downloads",
+        grau_stat_mau: "Monthly Players (MAU)",
+        grau_stat_impressions: "Ad Impressions / Mo",
+        grau_stat_lead: "Technical Lead",
+
+        fixa_stat_downloads: "Play Store Downloads",
+        fixa_stat_mau: "Monthly Players (MAU)",
+        fixa_stat_impressions: "Ad Impressions / Mo",
+        fixa_stat_role: "Technical Lead",
+
         /* --- Project: Grau é Arte Online --- */
-        grau_desc: "A casual 3D multiplayer game focused on motorcycle culture. Players can perform stunts, earn money through deliveries, modify and customize their bikes in the workshop, as well as buy, sell, or rent vehicles. The game features several maps inspired by Brazil and allows for strong social interaction through chat and virtual meetups with other players.",
-        grau_resp_list: "<li>Improved and added new stunt mechanics using Inverse Kinematics (IK), 3D physics, and analytical geometry.</li><li>Refactored and organized the pre-existing codebase, applying SOLID principles for better scalability.</li><li>Developed delivery systems simulating real-world apps, a dynamic day/night cycle, and survival mechanics (hunger and thirst).</li><li>Synchronized all systems in real-time for multiplayer mode using Unity Netcode for GameObjects.</li><li>Integrated Firebase Crashlytics for real-time monitoring and crash resolution.</li><li>Identified and resolved scripting and rendering bottlenecks using the Unity Profiler, significantly improving overall performance.</li>",
-        grau_exp_text: "I have been working on this project for 1 year and 8 months, and it has been a journey of immense learning. At first, it was a huge challenge because I had never worked with multiplayer games or mobile-focused development before. Having the opportunity to hone my skills in both areas simultaneously was fantastic. Furthermore, I was able to gain hands-on experience and master several crucial tools for today's gaming industry, such as monetization SDKs (Ads), Firebase, and Unity Netcode.",
+        grau_desc: "A casual 3D multiplayer game centered around motorcycle culture with over 2 million combined downloads across Google Play and the App Store, maintaining an average of 200k+ monthly active users and 1M+ monthly ad impressions. I served as Technical Lead for over 2.5 years, steering technical development, critical optimizations, social roleplay mechanics, and monthly content releases.",
+        grau_resp_list: "<li><strong>Scale & Technical Leadership:</strong> Served as Technical Lead for over 2.5 years on a live project with 2M+ downloads, managing technical architecture, team deliveries, and codebase scalability following SOLID principles.</li><li><strong>+100% Ad Revenue Growth:</strong> Spearheaded monthly impactful feature updates that set the title apart from niche competitors, collaborating closely with marketing to more than double ad revenue.</li><li><strong>Delivery App Simulation & Social Roleplay:</strong> Engineered a delivery job system simulating real-world food and package delivery apps. Expanded the game beyond riding mechanics, enabling players to exit vehicles, explore the city on foot, and socialize — including the ability to hop in as a passenger on other players' bikes and vehicles.</li><li><strong>Performance Boost (+15 FPS) & Zero GC Alloc:</strong> Profiled and refactored critical scripts using the Unity Profiler and Event-Driven architecture, eliminating Garbage Collection allocations (zero GC Alloc) in tight loops and boosting frame rates by up to 15 FPS across multiple mobile devices.</li><li><strong>Extreme Memory Optimization (-60%):</strong> Performed deep profiling with Unity Memory Profiler and Memory Snapshots, optimizing custom shaders, materials, and texture compression to slash memory usage from 1.32 GB to 0.51 GB.</li><li><strong>Production Stability with Crashlytics (+30% Crash-Free):</strong> Integrated and monitored Firebase Crashlytics in production, driving a 30% increase in crash-free user sessions and significantly accelerating bug detection and fixes.</li><li><strong>Real-Time Multiplayer & Physics:</strong> Synchronized gameplay, passenger states, and customizations in real-time using Unity Netcode for GameObjects, alongside realistic stunt mechanics using IK, 3D physics, and analytical geometry.</li>",
+        grau_exp_text: "I served as Technical Lead on this project for over 2.5 years, and it was a transformative journey. Leading technical operations for an established title with over 2 million downloads and 200k+ monthly active users gave me deep expertise in LiveOps, extreme mobile optimization under strict hardware constraints, and business-driven architectural decision making. Beyond technical performance feats, transforming the title into a true social roleplay platform was deeply rewarding: introducing the delivery app simulation and the ability to explore on foot or ride as a passenger with friends dramatically elevated community immersion and retention.",
 
         /* --- Project: Fixa Brasil --- */
-        fixa_desc: "A casual 3D multiplayer game focused on car customization culture. Players can lower, modify, and personalize their cars and sound systems, as well as import their own music to play in-game. All of this is set in a large open-world map inspired by the streets of Brazil.",
-        fixa_resp_list: "<li>Bug fixing and performance optimization of the base game right after launch.</li><li>Refactored and organized the existing code architecture, applying SOLID principles to facilitate scalability and maintenance.</li><li>Developed and integrated a local audio import system, allowing players to listen to their own music in their cars.</li><li>Implemented an immersive Photo Mode for players to capture their customizations.</li><li>Synchronized all new systems and mechanics in real-time for multiplayer mode using Unity Netcode for GameObjects.</li>",
-        fixa_exp_text: "I joined this project just over two weeks ago, coinciding with the post-launch period. As a newly released game with an active and growing player base, there is a vast scope of features to be explored and added. It has been a highly rewarding experience to directly and quickly apply the technical background and architectural knowledge I acquired in previous projects to stabilize and expand the game.",
+        fixa_desc: "A casual 3D multiplayer game focused on Brazilian automotive culture and social immersion, boasting over 100k downloads on Google Play, 70k+ monthly active users, and an average of 200k monthly ad impressions. I serve as Technical Lead from its launch through the present, steering continuous live operations, system architecture, survival systems, and community-driven features.",
+        fixa_resp_list: "<li><strong>Technical Leadership & LiveOps:</strong> Serving as Technical Lead from commercial launch through ongoing live operations, directing scalable architecture, application stability, ad monetization SDK integrations, and Firebase Crashlytics.</li><li><strong>Car Audio Customization & Code-Based Sharing:</strong> Created a modular sound customization system with the ability to export and import player-created sound setups via code generation using JSON serialization and Base64, granting complete freedom and community engagement for players without requiring cloud storage.</li><li><strong>Multiplayer Synchronization & Persistence:</strong> Real-time replication of custom sound setups and speaker configurations across all room players via Unity Netcode, including error-handling validation against invalid codes and local configuration persistence.</li><li><strong>Photo Mode:</strong> Developed camera tools and a custom interface (UI) for capturing and recording screenshots of vehicle customizations.</li><li><strong>Survival Systems:</strong> Created and integrated survival mechanics featuring hunger, thirst (purchasing supplies), and dynamic vehicle fuel consumption requiring gas station stops.</li><li><strong>Delivery Jobs & Social Roleplay:</strong> Developed delivery missions inspired by real-world delivery apps, on-foot city exploration, and riding as passengers in friends' vehicles in multiplayer.</li><li><strong>Local Audio Import Pipeline:</strong> Integrated an in-game audio player allowing users to stream local songs directly from their device storage into the vehicle's audio system.</li>",
+        fixa_exp_text: "I serve as Technical Lead on Fixa Brasil since its launch, actively steering continuous maintenance and feature expansions. Seeing the game surpass 100k downloads and tens of thousands of active monthly users right from the start has been extremely rewarding. As a live game with an active and growing player base, there is a vast scope of features to be explored and added. It has been a highly rewarding experience to directly and quickly apply the technical background and architectural knowledge I acquired in previous projects to stabilize and expand the game.",
 
         /* --- Project: Refúgio do Banzé --- */
         banze_desc: "Refúgio do Banzé is an educational 2D mobile tower defense game set during the colonization era of Brazil. The main objective is to defend your Mocambo against attacks from European invaders. To do this, players must progress through levels, gather resources, and strengthen their defenses by building and upgrading facilities. With each milestone, players face new challenges and unlock real historical content about this pivotal moment in Brazil.",
-        banze_resp_list: "<li>Developed and implemented new User Interface (UI) features, including dynamic progress bars and skill purchase button systems in the in-game shops.</li><li>Identified and fixed bugs related to gameplay mechanics and interface usability.</li><li>Continuously integrated art assets, 2D animations, and audio effects into the engine.</li><li>Adapted and developed system tools to allow Game Designers to balance the game autonomously and independently.</li><li>Actively participated in code reviews, ensuring code quality and standardization across the team.</li>",
+        banze_resp_list: "<li>Developed and implemented new User Interface (UI) features, including dynamic progress bars and skill purchase button systems in the in-game shops.</li><li>Identified and fixed bugs related to gameplay mechanics and interface usability.</li><li>Continuously integrated art assets, 2D animations, and audio effects into the engine.</li><li>Adapted and developed system tools to allow Game Designers to balance the game autonomously and independently.</li><li>Direct collaboration with fellow developers, artists, designers, and producers to align technical implementation, art, and game balance.</li><li>Actively participated in code reviews, ensuring code quality and standardization across the team.</li>",
         banze_exp_text: "This project marked my first hands-on experience with structured agile methodologies, such as using Git Flow and participating in rigorous code review processes. Beyond the immense technical learning and team version control best practices, it was an incredibly rich and rewarding experience to contribute to the development of an educational game focused on Brazil's rich history.",
 
         /* --- Project: Machick --- */
         machick_desc: "Defeat a heavily armed army of anti-magic frogs and free the forest from destruction. Machick is a casual roguelite game where you build your own wands, survive enemy hordes, collect XP, and select upgrades to go further in your journey.",
-        machick_resp_list: "<li>Developed core gameplay systems, including level progression, procedural map event generation and control, as well as movement mechanics.</li><li>Implemented some User Interface (UI) functions and structured a dynamic localization system to support multiple languages.</li><li>Led and planned alongside the sound team, acting on the technical end-to-end integration of all audio within the engine to ensure the ideal 'game feel'.</li><li>Resolved complex bugs, polished gameplay, and continuously improved general game systems.</li>",
+        machick_resp_list: "<li>Developed core gameplay systems, including level progression, procedural map event generation and control, as well as movement mechanics.</li><li>Implemented some User Interface (UI) functions and structured a dynamic localization system to support multiple languages.</li><li>Led and planned alongside the sound team, acting on the technical end-to-end integration of all audio within the engine to ensure the ideal 'game feel'.</li><li>Direct collaboration with fellow developers, artists, designers, and producers across the full production lifecycle up to commercial launch on Steam.</li><li>Resolved complex bugs, polished gameplay, and continuously improved general game systems.</li>",
         machick_exp_text: "This was a massive milestone in my career as it was my first released commercial game. Working within a dedicated indie team, I had the unique opportunity to actively participate in the entire lifecycle of the project: from initial brainstorming and concept meetings, through heavy development, to post-launch support and patching. This end-to-end experience incredibly expanded both my technical and product vision.",
 
         /* --- Project: Eclipse: Shine of Dawn --- */
-        eclipse_desc: "Eclipse: Shine of Dawn is an action-adventure game centered around fluid combat and exploration. Developed for PC by Iamandu Studios, the project delivers a rich and challenging world featuring dynamic battles against mythical creatures.",
-        eclipse_resp_list: "<li>Refined and polished responsive character movement and melee combat mechanics.</li><li>Technically integrated and balanced sound effects and ambient audio inside Unity to elevate player immersion.</li><li>Implemented and refined enemy artificial intelligence utilizing Unity NavMesh.</li><li>Resolved bugs and optimized overall performance and scripts to maintain smooth frame rates on PC.</li><li>Officially represented the studio and game at Brasil Game Show (BGS) 2023, showcasing the game to attendees and gathering direct player feedback.</li>",
-        eclipse_exp_text: "Working on Eclipse at Iamandu Studios was a cornerstone for cementing my abilities in 3D gameplay architecture and combat systems. Besides direct technical milestones in Unity NavMesh and audio pipeline integration, representing the team at BGS 2023 was a transformative experience in connecting directly with players and gathering actionable real-time feedback."
+        eclipse_desc: "Eclipse: Shine of Dawn is an action-adventure game centered around fluid combat and exploration. Developed for PC by DeadPixel Studios, the project delivers a rich and challenging world featuring dynamic battles against mythical creatures.",
+        eclipse_resp_list: "<li>Co-developed enemy Artificial Intelligence from scratch, architecting and implementing behaviors using State Machine, NavMesh, and IK.</li><li>Fixed and polished critical game-breaking bugs in the first boss combat encounter.</li><li>Integrated dynamic audio systems and sound effects utilizing FMOD.</li><li>Direct multidisciplinary collaboration with developers, artists, designers, and producers to align combat mechanics, assets, and delivery milestones.</li><li>Showcased and presented the game alongside the team to the public at Brasil Game Show (BGS), Latin America's largest gaming event.</li><li>Participated in podcasts and produced social media content to promote the game and build community engagement.</li>",
+        eclipse_exp_text: "This was my first professional experience and a major milestone in my growth as a developer. Working on a large-scale team codebase allowed me to learn immensely through reading, studying, and participating in code reviews with fellow developers. Beyond the significant technical leap in gameplay systems and AI, it was deeply rewarding to contribute not only to programming, but also to showcase the game to players at BGS and help build the project's community."
     }
 };
