@@ -901,10 +901,10 @@ footer {
 
 .project-stats .stat-number {
     display: block;
-    font-size: 1.9rem;
+    font-size: clamp(1.4rem, 2.5vw, 1.9rem);
     font-weight: 800;
     color: var(--accent-color);
-    line-height: 1.1;
+    line-height: 1.15;
 }
 
 .project-stats .stat-label {
@@ -916,6 +916,77 @@ footer {
     text-transform: uppercase;
     letter-spacing: 0.5px;
     line-height: 1.3;
+}
+
+/* --- Banner de Destaque de Premiação (Ex: Eclipse / BGS) --- */
+.project-award-banner {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 1.5rem 0 2.5rem 0;
+    padding: 1.5rem 2rem;
+    background: linear-gradient(135deg, rgba(88, 166, 255, 0.08) 0%, rgba(22, 27, 34, 0.95) 100%);
+    border: 1px solid rgba(88, 166, 255, 0.35);
+    border-radius: 14px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(88, 166, 255, 0.15);
+}
+
+.project-award-banner .award-icon-wrapper {
+    flex-shrink: 0;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: rgba(88, 166, 255, 0.12);
+    border: 1px solid rgba(88, 166, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent-color);
+    font-size: 1.8rem;
+    box-shadow: 0 0 20px rgba(88, 166, 255, 0.2);
+}
+
+.project-award-banner .award-info {
+    flex-grow: 1;
+}
+
+.project-award-banner .award-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.35rem;
+}
+
+.project-award-banner .award-title {
+    font-size: clamp(1.3rem, 2.5vw, 1.7rem);
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.25;
+    margin-bottom: 0.25rem;
+}
+
+.project-award-banner .award-subtitle {
+    font-size: 0.95rem;
+    color: #8b949e;
+    line-height: 1.4;
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    .project-award-banner {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem 1.25rem;
+        gap: 1rem;
+    }
+    .project-award-banner .award-badge {
+        justify-content: center;
+    }
 }
 
 /* ==========================================================================
