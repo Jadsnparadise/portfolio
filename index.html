@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jonas Sena | Unity Game Developer</title>
+    <title data-i18n="page_title_home">Jonas Sena | Unity Game Developer</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
@@ -13,7 +13,7 @@
 
     <header>
         <nav>
-            <div class="logo">Jonas.Dev</div>
+            <a href="index.html#inicio" class="logo">Jonas.Dev</a>
             <ul class="nav-links">
                 <li><a href="#inicio" data-i18n="nav_home">Início</a></li>
                 <li><a href="#projetos" data-i18n="nav_projects">Projetos</a></li>
@@ -21,8 +21,8 @@
                 <li><a href="#contato" data-i18n="nav_contact">Contato</a></li>
             </ul>
             <div class="lang-buttons">
-                <button onclick="changeLanguage('pt')">PT</button>
-                <button onclick="changeLanguage('en')">EN</button>
+                <button data-lang="pt" onclick="changeLanguage('pt')">PT</button>
+                <button data-lang="en" onclick="changeLanguage('en')">EN</button>
             </div>
         </nav>
     </header>
@@ -31,28 +31,92 @@
         <div class="intro-wrapper">
             
             <div class="intro-content">
-                <h1 data-i18n="intro_hello">Olá, eu sou o <span class="highlight">Jonas Sena</span></h1>
+                <h1 data-i18n="intro_hello">Oi, me chamo <span class="highlight">Jonas Sena</span></h1>
                 <h2 data-i18n="intro_role">Unity Game Developer</h2>
                 <p data-i18n="intro_desc">
-                    Oi, eu sou o Jonas! Sou Unity Game Developer com 3 anos de experiência.<br><br>
-                    Atualmente estou trabalhando na Santos Games, desenvolvendo e mantendo os jogos Grau é Arte Online e Fixa Brasil. Além disso, atuo como freelancer na Baladeira Studios; meu último trabalho foi no jogo Refúgio do Banzé, onde atuei na programação de UI e correção de bugs.<br><br>
-                    Antes da Santos Games, trabalhei na DeadPixel Studios no jogo Machick. Não atuei apenas como programador, mas como parte essencial da equipe, participando ativamente de todo o processo criativo e técnico, desde a concepção da ideia até o seu lançamento.<br><br>
-                    Antes disso, estive na Iamandu Studios desenvolvendo sistemas para o jogo Eclipse: Shine of Dawn. Além da programação, tive um papel fundamental na representação do estúdio, realizando apresentações e exibições do jogo diretamente para o público em grandes eventos como a Brasil Game Show(BGS) em 2023.
+                    Oi, eu sou Jonas! Sou Unity Game Developer com mais de 3 anos de experiência.<br><br>
+                    Atualmente estou trabalhando na Santos Games no jogo Fixa Brasil e em um novo projeto interno ainda não lançado, além de ter atuado anteriormente no Grau é Arte Online. Também atuo como freelancer na Baladeira Studios, onde contribuí no jogo Refúgio do Banzé com programação de UI e correção de bugs.<br><br>
+                    Anteriormente, atuei na DeadPixel Studios no desenvolvimento de dois grandes títulos: o roguelite Machick, participando de todo o processo criativo e técnico desde a concepção até o lançamento comercial, e o hack 'n' slash Eclipse: Shine of Dawn, onde contribuí no desenvolvimento da IA dos inimigos do zero junto à equipe e representei o estúdio apresentando o jogo diretamente ao público na Brasil Game Show em 2023.
                 </p>
             </div>
 
             <div class="intro-image">
                 <img src="images/Jonas portfolio image.jpg" alt="Foto de Jonas Sena">
+                <div class="intro-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label" data-i18n="stat_exp">Anos de Experiência</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">4</span>
+                        <span class="stat-label" data-i18n="stat_projects">Jogos Comerciais</span>
+                    </div>
+                </div>
             </div>
 
         </div>
         
-        <div class="skills-grid" style="margin-top: 4rem;">
-            <div class="skill-card"><i class="fa-brands fa-unity"></i><p>Unity</p></div>
-            <div class="skill-card"><i class="fa-solid fa-code"></i><p>C#</p></div>
-            <div class="skill-card"><i class="fa-solid fa-mobile-screen"></i><p>Mobile</p></div>
-            <div class="skill-card"><i class="fa-solid fa-network-wired"></i><p>Multiplayer</p></div>
-            <div class="skill-card"><i class="fa-solid fa-fire"></i><p>Firebase + Crashlytics</p></div>
+        <div class="skills-section">
+            <h3 class="skills-title" data-i18n="skills_title">Competências Técnicas</h3>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fa-brands fa-unity"></i>
+                    <p data-i18n="skill_unity">Unity 2D/3D</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-code"></i>
+                    <p data-i18n="skill_csharp">C#</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-gamepad"></i>
+                    <p data-i18n="skill_gameplay">Gameplay Programming</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-diagram-project"></i>
+                    <p data-i18n="skill_system_design">System Design</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-bolt"></i>
+                    <p data-i18n="skill_event_driven">Event-Driven Code</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-network-wired"></i>
+                    <p data-i18n="skill_multiplayer">Multiplayer</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-display"></i>
+                    <p data-i18n="skill_ui">UI Programming</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-gauge-high"></i>
+                    <p data-i18n="skill_profiler">Unity Profiler</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-microchip"></i>
+                    <p data-i18n="skill_memory">Memory Profiler</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <p data-i18n="skill_mobile_pc">Mobile & PC</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-rectangle-ad"></i>
+                    <p data-i18n="skill_ads">Ads System</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <p data-i18n="skill_analytics">Crashlytics / Analytics</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-language"></i>
+                    <p data-i18n="skill_localization">Localization Systems</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-brands fa-git-alt"></i>
+                    <p data-i18n="skill_git">Git</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -62,11 +126,11 @@
             
             <a href="grau.html" class="project-card">
                 <div class="project-img">
-                    <img src="images/grau.jpg" alt="Capa do jogo Grau é Arte Online" class="img-fill">
+                    <img src="images/grau e arte media/grau.jpg" alt="Capa do jogo Grau é Arte Online" class="img-fill">
                 </div>
                 <div class="project-info">
                     <h3 data-i18n="proj1_title">Grau é Arte Online</h3>
-                    <p data-i18n="proj1_desc">Focado na implementação e otimização de sistemas multiplayer em tempo real utilizando Unity Netcode, além do desenvolvimento da física de veículos e animações.</p>
+                    <p data-i18n="proj1_desc">Jogo casual e social de motociclismo em 3D para mobile (Android e iOS), com física realista de manobras, exploração de cidade e multiplayer em tempo real.</p>
                     <div class="tags">
                         <span data-i18n="tag_unity3d">Unity3D</span>
                         <span data-i18n="tag_mobile">Mobile</span>
@@ -85,12 +149,13 @@
                 </div>
                 <div class="project-info">
                     <h3 data-i18n="proj2_title">Fixa Brasil</h3>
-                    <p data-i18n="proj2_desc">Manutenção e implementação de sistemas de controle de UI, integração de anúncios, Firebase Crashlytics e suporte contínuo para sincronização multiplayer.</p>
+                    <p data-i18n="proj2_desc">Jogo casual e simulador automotivo em 3D para mobile (Android), focado na cultura brasileira de carros rebaixados, customização de som e multiplayer online.</p>
                     <div class="tags">
                         <span data-i18n="tag_unity3d">Unity3D</span>
                         <span data-i18n="tag_mobile">Mobile</span>
                         <span data-i18n="tag_multiplayer">Multiplayer</span>
-                        <span data-i18n="tag_gameplay">Gameplay</span>
+                        <span data-i18n="tag_ad_system">Sistema de Anúncios</span>
+                        <span data-i18n="tag_gameplay_prog">Programação de Gameplay</span>
                         <span data-i18n="tag_ui_prog">Programação de UI</span>
                     </div>
                 </div>
@@ -98,11 +163,11 @@
 
             <a href="banze.html" class="project-card">
                 <div class="project-img">
-                    <img src="images/banze.jpg" alt="Capa do jogo Refúgio do Banzé">
+                    <img src="images/banze midia/banze.jpg" alt="Capa do jogo Refúgio do Banzé">
                 </div>
                 <div class="project-info">
                     <h3 data-i18n="proj3_title">Refúgio do Banzé</h3>
-                    <p data-i18n="proj3_desc">Foco em programação de UI, correção de bugs, polimento de gameplay e desenvolvimento de sistemas autônomos de balanceamento para Game Designers.</p>
+                    <p data-i18n="proj3_desc">Jogo de estratégia e Tower Defense em 2D para mobile, com temática histórica e educativa sobre a resistência dos mocambos no Brasil colonial.</p>
                     <div class="tags">
                         <span data-i18n="tag_unity2d">Unity2D</span>
                         <span data-i18n="tag_mobile">Mobile</span>
@@ -118,7 +183,7 @@
                 </div>
                 <div class="project-info">
                     <h3 data-i18n="proj4_title">Machick</h3>
-                    <p data-i18n="proj4_desc">Ciclo completo de desenvolvimento. Criação de progressão de fases, geração de inimigos, UI, localização e direção técnica de todo o sistema de áudio.</p>
+                    <p data-i18n="proj4_desc">Jogo Vampire Survivors-like, roguelite em 2D para PC (Steam), com criação de varinhas mágicas e combate contra hordas de inimigos.</p>
                     <div class="tags">
                         <span data-i18n="tag_unity2d">Unity2D</span>
                         <span data-i18n="tag_pc">PC</span>
@@ -135,12 +200,13 @@
                 </div>
                 <div class="project-info">
                     <h3 data-i18n="proj5_title">Eclipse: Shine of Dawn</h3>
-                    <p data-i18n="proj5_desc">Melhoria nos sistemas de combate e movimentação, integração de áudio e representação do estúdio apresentando o jogo na Brasil Game Show (BGS).</p>
+                    <p data-i18n="proj5_desc">Jogo de ação e aventura hack 'n' slash em 3D para PC (Steam), com combate dinâmico fluido, ambientação de fantasia e confrontos contra criaturas místicas.</p>
                     <div class="tags">
-                        <span data-i18n="tag_unity">Unity</span>
+                        <span data-i18n="tag_unity3d">Unity3D</span>
                         <span data-i18n="tag_pc">PC</span>
                         <span data-i18n="tag_gameplay_prog">Programação de Gameplay</span>
                         <span data-i18n="tag_audio_int">Integração de Áudio</span>
+                        <span data-i18n="tag_fmod">FMOD</span>
                         <span data-i18n="tag_navmesh">NavMesh IA</span>
                     </div>
                 </div>
@@ -155,25 +221,26 @@
             
             <div class="timeline-item">
                 <h3 data-i18n="exp1_title">Unity Game Developer - Santos Games</h3>
-                <span class="date">07/2024 - Presente</span>
-                <p data-i18n="exp1_desc">Manutenção e implementação de features como física de veículos, sistemas de anúncios e UI. Implementação e otimização de multiplayer usando Unity Netcode for GameObjects e Relay.</p>
+                <span class="date" data-i18n="exp1_date">07/2024 - Presente</span>
+                <p data-i18n="exp1_desc">
+                    <strong>Fixa Brasil:</strong> Atuação contínua na arquitetura de sistemas, manutenção LiveOps, controle de UI, integração de anúncios, Firebase Crashlytics e sincronização multiplayer em tempo real.<br><br>
+                    <strong>Grau é Arte Online:</strong> Implementação de física de veículos e manobras, sistemas de monetização/anúncios, otimização de performance e implementação de features multiplayer com Unity Netcode.
+                </p>
             </div>
 
             <div class="timeline-item">
                 <h3 data-i18n="exp2_title">Junior Unity Game Developer - Baladeira Studios</h3>
-                <span class="date">07/2024 - Presente</span>
-                <p data-i18n="exp2_desc">Envolvimento direto no jogo Refúgio do Banzé, construindo ferramentas para Game Designers e refinando a programação de UI e gameplay.</p>
+                <span class="date" data-i18n="exp2_date">07/2024 - Presente</span>
+                <p data-i18n="exp2_desc"><strong>Refúgio do Banzé:</strong> Envolvimento direto no desenvolvimento do jogo, construindo ferramentas para Game Designers e refinando a programação de UI e gameplay.</p>
             </div>
 
             <div class="timeline-item">
                 <h3 data-i18n="exp3_title">Unity Game Developer - DeadPixel Studios</h3>
-                <span class="date">12/2023 - 06/2024</span>
-                <p data-i18n="exp3_desc">Membro fundador da equipe do jogo Machick. Gerenciamento do ciclo completo, controle de mapas, UI, localização e integração de áudio ponta a ponta.</p>
-            </div>
-            <div class="timeline-item">
-                <h3 data-i18n="exp4_title">Unity Game Developer - Iamandu Studios</h3>
-                <span class="date">01/2023 - 06/2024</span>
-                <p data-i18n="exp4_desc">Representação do jogo Eclipse na BGS. Integração de sistemas de áudio e otimização de mecânicas de combate e movimentação.</p>
+                <span class="date" data-i18n="exp3_date">01/2023 - 06/2024</span>
+                <p data-i18n="exp3_desc">
+                    <strong>Machick:</strong> Membro fundador da equipe, atuando no ciclo completo do jogo, controle de mapas procedurais, UI, localização e direção técnica de áudio.<br><br>
+                    <strong>Eclipse: Shine of Dawn:</strong> Desenvolvimento da IA dos inimigos do zero (State Machine, NavMesh, IK), integração técnica de áudio com FMOD e apresentação oficial do jogo na BGS 2023.
+                </p>
             </div>
 
         </div>
@@ -200,6 +267,8 @@
         <p data-i18n="footer_text">© 2026 Jonas Alves de Sena Neto. Construído com HTML, CSS e JS.</p>
     </footer>
 
+    <script src="js/translations.js"></script>
+    <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

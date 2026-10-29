@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Machick | Jonas Sena</title>
+    <title data-i18n="page_title_machick">Machick | Jonas Sena</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -12,7 +12,7 @@
 
     <header>
         <nav>
-            <div class="logo">Jonas.Dev</div>
+            <a href="index.html#inicio" class="logo">Jonas.Dev</a>
             <ul class="nav-links">
                 <li><a href="index.html#inicio" data-i18n="nav_home">Início</a></li>
                 <li><a href="index.html#projetos" data-i18n="nav_projects">Projetos</a></li>
@@ -20,8 +20,8 @@
                 <li><a href="index.html#contato" data-i18n="nav_contact">Contato</a></li>
             </ul>
             <div class="lang-buttons">
-                <button onclick="changeLanguage('pt')">PT</button>
-                <button onclick="changeLanguage('en')">EN</button>
+                <button data-lang="pt" onclick="changeLanguage('pt')">PT</button>
+                <button data-lang="en" onclick="changeLanguage('en')">EN</button>
             </div>
         </nav>
     </header>
@@ -41,30 +41,76 @@
         </div>
 
         <div class="project-video-container">
-            <iframe src="https://www.youtube.com/embed/COLOQUE_SEU_VIDEO_AQUI" title="Machick Gameplay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <video controls playsinline preload="metadata" poster="images/machick-steam-media/screenshots/machick-screenshot-01.jpg">
+                <source src="images/machick-steam-media/trailers/machick-gameplay-trailer-720p.mp4" type="video/mp4">
+                Seu navegador não suporta a reprodução de vídeo.
+            </video>
         </div>
 
         <div class="platform-links">
-            <a href="https://store.steampowered.com/app/2811200/Machick/" target="_blank" class="platform-btn" style="border-color: #66c0f4; color: #66c0f4;">
+            <a href="https://store.steampowered.com/app/2811200/Machick/" target="_blank" class="platform-btn steam">
                 <i class="fa-brands fa-steam"></i> Steam
             </a>
         </div>
 
+        <div class="project-stats">
+            <div class="stat-item">
+                <span class="stat-number">+200</span>
+                <span class="stat-label" data-i18n="machick_stat_reviews">Reviews na Steam</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">84%</span>
+                <span class="stat-label" data-i18n="machick_stat_positive">Avaliações Positivas</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-i18n="machick_stat_rating_val">Muito Positivas</span>
+                <span class="stat-label" data-i18n="machick_stat_rating">Classificação Steam</span>
+            </div>
+        </div>
+
+        <div class="project-gallery">
+            <div class="gallery-banner">
+                <img src="images/machick-steam-media/artwork/machick-library-hero.jpg" alt="Machick - Arte Panorâmica Oficial Steam" loading="lazy">
+            </div>
+            <div class="gallery-screens">
+                <div class="gallery-item">
+                    <img src="images/machick-steam-media/screenshots/machick-screenshot-01.jpg" alt="Machick - Combate e Magias" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/machick-steam-media/screenshots/machick-screenshot-02.jpg" alt="Machick - Criação e Customização de Varinhas" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/machick-steam-media/screenshots/machick-screenshot-03.jpg" alt="Machick - Hordas de Inimigos e Batalhas" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/machick-steam-media/screenshots/machick-screenshot-04.jpg" alt="Machick - Progressão e Escolha de Upgrades" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/machick-steam-media/screenshots/machick-screenshot-05.jpg" alt="Machick - Chefes e Eventos de Mapa" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/machick-steam-media/screenshots/machick-screenshot-06.jpg" alt="Machick - Variedade de Feitiços e Efeitos" loading="lazy">
+                </div>
+            </div>
+        </div>
+
         <div class="project-details">
             <p data-i18n="machick_desc" style="font-size: 1.2rem; margin-bottom: 3rem;">
-                Derrote um exército fortemente armado de sapos anti-magia e liberte a floresta da destruição. Machick é um jogo casual (roguelite) onde você constrói suas próprias varinhas, sobrevive a hordas de inimigos, coleta XP e seleciona aprimoramentos para ir cada vez mais longe na jornada.
+                Derrote um exército fortemente armado de sapos anti-magia e liberte a floresta da destruição. Machick é um jogo Vampire Survivors-like, roguelite onde você constrói suas próprias varinhas, sobrevive a hordas de inimigos, coleta XP e seleciona aprimoramentos para ir cada vez mais longe na jornada.
             </p>
             
             <h2 data-i18n="proj_resp_title">Minhas Responsabilidades</h2>
             <ul data-i18n="machick_resp_list" style="margin-bottom: 3rem; padding-left: 1.5rem; color: #c9d1d9; line-height: 1.8;">
                 <li>Desenvolvimento de sistemas core de gameplay, incluindo progressão de nível, geração procedural e controle de eventos de mapa, além das mecânicas de movimentação.</li>
-                <li>Implementação de algumas funções da interface de utilizador (UI) e estruturação de um sistema dinâmico de localização para suportar múltiplos idiomas.</li>                <li>Liderança e planejamento em conjunto com a equipe de som, atuando na integração técnica de todo o áudio na engine para garantir o "game feel" ideal.</li>
+                <li>Implementação de algumas funções da interface de usuário (UI) e estruturação de um sistema dinâmico de localização para suportar múltiplos idiomas.</li>
+                <li>Liderança e planejamento em conjunto com a equipe de som, atuando na integração técnica de todo o áudio na engine para garantir o "game feel" ideal.</li>
+                <li>Colaboração direta e próxima com outros desenvolvedores, artistas, designers e producers durante todo o ciclo de produção até o lançamento comercial.</li>
                 <li>Resolução de bugs complexos, polimento de gameplay e aprimoramento contínuo dos sistemas gerais do jogo.</li>
             </ul>
             
             <h2 data-i18n="proj_exp_title">Minha Experiência</h2>
             <p data-i18n="machick_exp_text">
-                Este foi um marco imenso na minha carreira por ser o meu primeiro jogo comercial lançado. Trabalhando em uma equipe indie dedicada, tive a oportunidade única de participar ativamente de todo o ciclo de vida do projeto: desde as reuniões iniciais de brainstorm e concepção da ideia, passando por todo o desenvolvimento pesado, até o suporte e envio de correções (patches) no pós-lançamento. Essa vivência ponta a ponta expandiu incrivelmente minha visão tanto técnica quanto de produto.
+                Este foi um marco imenso na minha carreira por ser o meu primeiro jogo comercial lançado. Trabalhando em uma equipe indie dedicada, tive a oportunidade única de participar ativamente de todo o ciclo de vida do projeto: desde as reuniões iniciais de brainstorm e concepção da ideia, passando por todo o desenvolvimento pesado, até o lançamento comercial na Steam, alcançando mais de 200 reviews com 84% de avaliações positivas. Essa vivência ponta a ponta expandiu incrivelmente minha visão tanto técnica quanto de produto.
             </p>
         </div>
     </section>
@@ -73,6 +119,8 @@
         <p data-i18n="footer_text">© 2026 Jonas Alves de Sena Neto. Construído com HTML, CSS e JS.</p>
     </footer>
 
+    <script src="js/translations.js"></script>
+    <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

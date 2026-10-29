@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grau é Arte | Jonas Sena</title>
+    <title data-i18n="page_title_eclipse">Eclipse: Shine of Dawn | Jonas Sena</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -12,7 +12,7 @@
 
     <header>
         <nav>
-            <div class="logo">Jonas.Dev</div>
+            <a href="index.html#inicio" class="logo">Jonas.Dev</a>
             <ul class="nav-links">
                 <li><a href="index.html#inicio" data-i18n="nav_home">Início</a></li>
                 <li><a href="index.html#projetos" data-i18n="nav_projects">Projetos</a></li>
@@ -20,8 +20,8 @@
                 <li><a href="index.html#contato" data-i18n="nav_contact">Contato</a></li>
             </ul>
             <div class="lang-buttons">
-                <button onclick="changeLanguage('pt')">PT</button>
-                <button onclick="changeLanguage('en')">EN</button>
+                <button data-lang="pt" onclick="changeLanguage('pt')">PT</button>
+                <button data-lang="en" onclick="changeLanguage('en')">EN</button>
             </div>
         </nav>
     </header>
@@ -30,30 +30,85 @@
         <a href="index.html#projetos" class="back-link"><i class="fa-solid fa-arrow-left"></i> <span data-i18n="btn_back">Voltar aos Projetos</span></a>
 
         <div class="project-header">
-            <h1 data-i18n="proj1_title">Grau é Arte Online</h1>
+            <h1 data-i18n="proj5_title">Eclipse: Shine of Dawn</h1>
             <div class="tags" style="justify-content: center;">
                 <span data-i18n="tag_unity3d">Unity3D</span>
-                <span data-i18n="tag_mobile">Mobile</span>
-                <span data-i18n="tag_multiplayer">Multiplayer</span>
+                <span data-i18n="tag_pc">PC</span>
+                <span data-i18n="tag_gameplay_prog">Programação de Gameplay</span>
+                <span data-i18n="tag_audio_int">Integração de Áudio</span>
+                <span data-i18n="tag_fmod">FMOD</span>
+                <span data-i18n="tag_navmesh">NavMesh IA</span>
             </div>
         </div>
 
         <div class="project-video-container">
-            <iframe src="https://www.youtube.com/embed/SEU_ID_DO_VIDEO_AQUI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <video controls playsinline preload="metadata" poster="images/eclipse-shine-of-dawn-steam-media/screenshots/eclipse-shine-of-dawn-screenshot-01.jpg">
+                <source src="images/eclipse-shine-of-dawn-steam-media/trailers/eclipse-shine-of-dawn-trailer-1-1080p.mp4" type="video/mp4">
+                Seu navegador não suporta a reprodução de vídeo.
+            </video>
         </div>
 
         <div class="platform-links">
-            <a href="LINK_DA_PLAYSTORE" target="_blank" class="platform-btn playstore">
-                <i class="fa-brands fa-google-play"></i> Google Play
+            <a href="https://store.steampowered.com/app/2130300/Eclipse_Shine_of_Dawn/" target="_blank" class="platform-btn steam">
+                <i class="fa-brands fa-steam"></i> Steam
             </a>
+        </div>
+
+        <div class="project-award-banner">
+            <div class="award-icon-wrapper">
+                <i class="fa-solid fa-trophy"></i>
             </div>
+            <div class="award-info">
+                <span class="award-badge" data-i18n="eclipse_award_badge">
+                    <i class="fa-solid fa-star"></i> BGS 2023 • Prêmio Oficial IGN
+                </span>
+                <h3 class="award-title" data-i18n="eclipse_award_title">Melhor Jogo Indie por Voto Popular</h3>
+                <p class="award-subtitle" data-i18n="eclipse_award_subtitle">Eleito pelo público na Brasil Game Show, maior evento de jogos da América Latina</p>
+            </div>
+        </div>
+
+        <div class="project-gallery">
+            <div class="gallery-banner">
+                <img src="images/eclipse-shine-of-dawn-steam-media/artwork/eclipse-shine-of-dawn-library-hero.jpg" alt="Eclipse: Shine of Dawn - Arte Oficial Steam" loading="lazy">
+            </div>
+            <div class="gallery-screens-5">
+                <div class="gallery-item">
+                    <img src="images/eclipse-shine-of-dawn-steam-media/screenshots/eclipse-shine-of-dawn-screenshot-01.jpg" alt="Eclipse: Shine of Dawn - Combate e IA" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/eclipse-shine-of-dawn-steam-media/screenshots/eclipse-shine-of-dawn-screenshot-02.jpg" alt="Eclipse: Shine of Dawn - Cenário e Exploração" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/eclipse-shine-of-dawn-steam-media/screenshots/eclipse-shine-of-dawn-screenshot-03.jpg" alt="Eclipse: Shine of Dawn - Batalha de Boss" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/eclipse-shine-of-dawn-steam-media/screenshots/eclipse-shine-of-dawn-screenshot-04.jpg" alt="Eclipse: Shine of Dawn - Habilidades e Inimigos" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/eclipse-shine-of-dawn-steam-media/screenshots/eclipse-shine-of-dawn-screenshot-05.jpg" alt="Eclipse: Shine of Dawn - Atmosfera e Fantasia" loading="lazy">
+                </div>
+            </div>
+        </div>
 
         <div class="project-details">
-            <h2 data-i18n="proj_about_title">Sobre o Projeto</h2>
-            <p data-i18n="grau_about_text">Aqui você descreve o que é o Grau é Arte. Fale sobre o objetivo do jogo, o estilo, quantas pessoas jogam, e o que o torna especial no mercado de jogos mobile.</p>
+            <p data-i18n="eclipse_desc" style="font-size: 1.2rem; margin-bottom: 3rem;">
+                Eclipse: Shine of Dawn é um jogo de ação e aventura hack 'n' slash com foco em combate fluido e exploração. Desenvolvido para PC pela DeadPixel Studios, o projeto traz uma ambientação rica e desafiadora com mecânicas dinâmicas de batalha contra criaturas místicas.
+            </p>
             
-            <h2 data-i18n="proj_exp_title">Minha Experiência e Contribuição</h2>
-            <p data-i18n="grau_exp_text">Aqui é onde você brilha. Conte exatamente os desafios que você enfrentou. Como você otimizou o multiplayer usando Unity Netcode? Quais foram os problemas de UI que você resolveu? Fale sobre a implementação da física de veículos.</p>
+            <h2 data-i18n="proj_resp_title">Minhas Responsabilidades</h2>
+            <ul data-i18n="eclipse_resp_list" style="margin-bottom: 3rem; padding-left: 1.5rem; color: #c9d1d9; line-height: 1.8;">
+                <li>Desenvolvimento da IA dos inimigos do zero junto à equipe, arquitetando e implementando comportamentos através de State Machine, NavMesh e IK.</li>
+                <li>Correção e polimento de bugs críticos e impeditivos no combate do primeiro boss.</li>
+                <li>Integração técnica de áudios e efeitos sonoros utilizando FMOD.</li>
+                <li>Colaboração direta e multidisciplinar com outros desenvolvedores, artistas, designers e producers no alinhamento de escopo, arte e mecânicas.</li>
+                <li>Apresentação oficial do jogo ao público junto à equipe na Brasil Game Show (BGS 2023), conquistando o prêmio de Melhor Jogo Indie do evento por voto popular pela IGN.</li>
+                <li>Participação em podcasts e criação de conteúdo para divulgação do projeto em mídias sociais.</li>
+            </ul>
+            
+            <h2 data-i18n="proj_exp_title">Minha Experiência</h2>
+            <p data-i18n="eclipse_exp_text">
+                Foi minha primeira experiência profissional e um grande marco no meu desenvolvimento como desenvolvedor. Por ser um codebase robusto e em equipe, aprendi imensamente lendo, estudando e participando de code reviews com meus colegas de trabalho. Além do grande salto técnico em sistemas e IA, foi muito gratificante poder contribuir não apenas na programação, mas também apresentar o jogo ao público na BGS e ajudar a construir a comunidade do projeto.
+            </p>
         </div>
     </section>
 
@@ -61,6 +116,8 @@
         <p data-i18n="footer_text">© 2026 Jonas Alves de Sena Neto. Construído com HTML, CSS e JS.</p>
     </footer>
 
+    <script src="js/translations.js"></script>
+    <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

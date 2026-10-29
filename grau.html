@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grau é Arte | Jonas Sena</title>
+    <title data-i18n="page_title_grau">Grau é Arte Online | Jonas Sena</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -12,7 +12,7 @@
 
     <header>
         <nav>
-            <div class="logo">Jonas.Dev</div>
+            <a href="index.html#inicio" class="logo">Jonas.Dev</a>
             <ul class="nav-links">
                 <li><a href="index.html#inicio" data-i18n="nav_home">Início</a></li>
                 <li><a href="index.html#projetos" data-i18n="nav_projects">Projetos</a></li>
@@ -20,8 +20,8 @@
                 <li><a href="index.html#contato" data-i18n="nav_contact">Contato</a></li>
             </ul>
             <div class="lang-buttons">
-                <button onclick="changeLanguage('pt')">PT</button>
-                <button onclick="changeLanguage('en')">EN</button>
+                <button data-lang="pt" onclick="changeLanguage('pt')">PT</button>
+                <button data-lang="en" onclick="changeLanguage('en')">EN</button>
             </div>
         </nav>
     </header>
@@ -35,40 +35,105 @@
                 <span data-i18n="tag_unity3d">Unity3D</span>
                 <span data-i18n="tag_mobile">Mobile</span>
                 <span data-i18n="tag_multiplayer">Multiplayer</span>
+                <span data-i18n="tag_firebase">Firebase</span>
+                <span data-i18n="tag_ad_system">Sistema de Anúncios</span>
+                <span data-i18n="tag_gameplay_prog">Programação de Gameplay</span>
+                <span data-i18n="tag_ui_prog">Programação de UI</span>
             </div>
         </div>
 
-        <div class="project-video-container">
-            <iframe src="https://www.youtube.com/embed/COLOQUE_SEU_VIDEO_AQUI" title="Grau é Arte Gameplay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="project-videos-mobile-pair">
+            <div class="video-mobile-item">
+                <video controls playsinline preload="metadata">
+                    <source src="images/grau e arte media/grau demonstração.mp4" type="video/mp4">
+                    <source src="images/grau e arte media/grau-demonstracao.mp4" type="video/mp4">
+                    Seu navegador não suporta a reprodução de vídeo.
+                </video>
+            </div>
+            <div class="video-mobile-item">
+                <video controls playsinline preload="metadata">
+                    <source src="images/grau e arte media/grau demonstração 2.mp4" type="video/mp4">
+                    <source src="images/grau e arte media/grau-demonstracao-2.mp4" type="video/mp4">
+                    Seu navegador não suporta a reprodução de vídeo.
+                </video>
+            </div>
         </div>
 
         <div class="platform-links">
             <a href="https://play.google.com/store/apps/details?id=com.santosgames.geaonline&hl=pt_BR" target="_blank" class="platform-btn playstore">
                 <i class="fa-brands fa-google-play"></i> Google Play
             </a>
-            <a href="https://apps.apple.com/br/app/grau-é-arte-online/id6702023670" target="_blank" class="platform-btn appstore" style="border-color: #fff; color: #fff;">
+            <a href="https://apps.apple.com/br/app/grau-é-arte-online/id6702023670" target="_blank" class="platform-btn appstore">
                 <i class="fa-brands fa-apple"></i> App Store
             </a>
         </div>
 
+        <div class="project-stats">
+            <div class="stat-item">
+                <span class="stat-number">+2M</span>
+                <span class="stat-label" data-i18n="grau_stat_downloads">Downloads (Lojas)</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">+200k</span>
+                <span class="stat-label" data-i18n="grau_stat_mau">Jogadores Mensais</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">+1M</span>
+                <span class="stat-label" data-i18n="grau_stat_impressions">Impressões / Mês</span>
+            </div>
+        </div>
+
+        <div class="project-gallery">
+            <div class="gallery-screens-3x3">
+                <div class="gallery-item">
+                    <img src="images/grau e arte media/grau.jpg" alt="Grau é Arte Online - Arte Oficial" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/grau e arte media/1.png" alt="Grau é Arte Online - Screenshot 1" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/grau e arte media/2.png" alt="Grau é Arte Online - Screenshot 2" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/grau e arte media/3.png" alt="Grau é Arte Online - Screenshot 3" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/grau e arte media/4.png" alt="Grau é Arte Online - Screenshot 4" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/grau e arte media/5.png" alt="Grau é Arte Online - Screenshot 5" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/grau e arte media/6.png" alt="Grau é Arte Online - Screenshot 6" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/grau e arte media/7.png" alt="Grau é Arte Online - Screenshot 7" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/grau e arte media/8.png" alt="Grau é Arte Online - Screenshot 8" loading="lazy">
+                </div>
+            </div>
+        </div>
+
         <div class="project-details">
             <p data-i18n="grau_desc" style="font-size: 1.2rem; margin-bottom: 3rem;">
-                Jogo casual multiplayer em 3D focado na cultura do motociclismo. Nele, os jogadores podem realizar manobras, ganhar dinheiro fazendo entregas, modificar e personalizar suas motos na oficina, além de comprar, vender ou alugar veículos. O jogo oferece diversos mapas inspirados no Brasil e permite forte interação social através de chat e encontros virtuais com outros jogadores.
+                Jogo casual multiplayer em 3D focado na cultura do motociclismo com mais de 2 milhões de downloads somados na Google Play e App Store, mantendo uma média de mais de 200 mil jogadores ativos mensais e mais de 1 milhão de impressões de anúncios por mês. Atuei como Responsável Técnico do projeto por mais de 2 anos e meio, liderando o desenvolvimento técnico, otimizações críticas, mecânicas sociais de roleplay e atualizações mensais de conteúdo.
             </p>
             
-            <h2 data-i18n="proj_resp_title">Minhas Responsabilidades</h2>
+            <h2 data-i18n="proj_resp_title">Minhas Responsabilidades e Impactos</h2>
             <ul data-i18n="grau_resp_list" style="margin-bottom: 3rem; padding-left: 1.5rem; color: #c9d1d9; line-height: 1.8;">
-                <li>Melhoria e adição de novas mecânicas de manobras utilizando Cinemática Inversa (IK), física 3D e geometria analítica.</li>
-                <li>Refatoração e organização da base de código pré-existente, aplicando princípios SOLID para maior escalabilidade.</li>
-                <li>Desenvolvimento de sistemas de entrega que simulam aplicativos reais, ciclo dinâmico de dia e noite, e mecânicas de sobrevivência (fome e sede).</li>
-                <li>Sincronização de todos os sistemas em tempo real para o modo multiplayer utilizando Unity Netcode for GameObjects.</li>
-                <li>Integração do Firebase Crashlytics para monitoramento e resolução de falhas estruturais.</li>
-                <li>Identificação e correção de gargalos de scripts e renderização utilizando o Unity Profiler, melhorando a performance geral.</li>
+                <li><strong>Escala e Liderança Técnica:</strong> Atuei como Responsável Técnico do jogo por mais de 2 anos e meio, liderando a arquitetura técnica, direcionamento das entregas e escalabilidade do codebase com princípios SOLID.</li>
+                <li><strong>Crescimento de +100% na Receita de Anúncios:</strong> Entrega contínua de atualizações mensais de alto impacto com mecânicas inovadoras que diferenciaram o título no nicho de mercado, trabalhando alinhado à equipe de marketing para mais que dobrar a receita de ads.</li>
+                <li><strong>Sistema de Entregas & Roleplay Social:</strong> Desenvolvimento de um sistema de entregas simulando aplicativos reais de delivery de comida e encomendas. Expandi a experiência para além da pilotagem, permitindo aos jogadores saírem dos veículos, andarem livremente pela cidade a pé e interagirem socialmente — incluindo a possibilidade de subir como passageiro no veículo de outros jogadores.</li>
+                <li><strong>Ganho de Performance (+15 FPS) e Zero GC Alloc:</strong> Utilização do Unity Profiler para refatoração e otimização de scripts críticos, adotando arquitetura orientada a eventos (Event-Driven) e zerando alocações na Garbage Collection (zero GC Alloc) em loops recorrentes, gerando saltos de até 15 FPS em múltiplos aparelhos móveis.</li>
+                <li><strong>Otimização Extrema de Memória (-60%):</strong> Diagnóstico profundo através do Unity Memory Profiler e Memory Snapshots, otimizando shaders, materiais e compressão de texturas, reduzindo o consumo de memória RAM de 1.32 GB para 0.51 GB.</li>
+                <li><strong>Estabilidade com Crashlytics (+30% Sessões Sem Falhas):</strong> Integração e acompanhamento ativo do Firebase Crashlytics em produção, aumentando em 30% as sessões livres de falhas e acelerando drasticamente o diagnóstico e a resolução de bugs.</li>
+                <li><strong>Multiplayer em Tempo Real & Física:</strong> Sincronização em tempo real de gameplay, passageiros e customizações via Unity Netcode for GameObjects, além de mecânicas de manobras realistas com IK, física 3D e geometria analítica.</li>
             </ul>
             
             <h2 data-i18n="proj_exp_title">Minha Experiência</h2>
             <p data-i18n="grau_exp_text">
-                Estou trabalhando neste projeto há 1 ano e 8 meses e tem sido uma jornada de imenso aprendizado. No início, foi um grande desafio, pois eu ainda não havia trabalhado com jogos multiplayer e nem com desenvolvimento focado em plataformas mobile. Ter a oportunidade de aprimorar minhas habilidades nessas duas áreas simultaneamente foi fantástico. Além disso, pude ter contato prático e dominar diversas ferramentas cruciais para a indústria atual de jogos, como SDKs de monetização (Ads), Firebase e Unity Netcode.
+                Trabalhei como Responsável Técnico neste projeto por mais de 2 anos e meio e foi uma experiência transformadora. Assumir a liderança técnica de um jogo já lançado com mais de 2 milhões de downloads e mais de 200 mil jogadores mensais me deu uma bagagem sólida em LiveOps, otimização extrema sob restrições severas de hardware mobile e tomada de decisão estratégica alinhada com métricas de negócio. Além das otimizações pesadas de CPU e memória, foi muito enriquecedor transformar o jogo em uma plataforma social e de roleplay: a introdução do sistema de entregas e a capacidade de andar a pé e ser passageiro de outros jogadores expandiram drasticamente a retenção e a imersão da comunidade.
             </p>
         </div>
     </section>
@@ -77,6 +142,8 @@
         <p data-i18n="footer_text">© 2026 Jonas Alves de Sena Neto. Construído com HTML, CSS e JS.</p>
     </footer>
 
+    <script src="js/translations.js"></script>
+    <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,4 @@
+grau[[:space:]]demonstração[[:space:]]2.mp4 filter=lfs diff=lfs merge=lfs -text
+grau[[:space:]]demonstração.mp4 filter=lfs diff=lfs merge=lfs -text
+grau-demonstracao-2.mp4 filter=lfs diff=lfs merge=lfs -text
+grau-demonstracao.mp4 filter=lfs diff=lfs merge=lfs -text
