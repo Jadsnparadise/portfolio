@@ -48,6 +48,13 @@ nav {
     font-size: 1.5rem;
     font-weight: 800;
     color: var(--accent-color);
+    text-decoration: none;
+    cursor: pointer;
+    transition: opacity 0.2s ease, filter 0.2s ease;
+}
+
+.logo:hover {
+    filter: brightness(1.2);
 }
 
 .nav-links {
@@ -499,6 +506,76 @@ footer {
     background-color: #000;
 }
 
+/* Container para vídeos verticais (formato celular / mobile 9:16) */
+.project-video-container-mobile {
+    position: relative;
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto 2.5rem;
+    aspect-ratio: 9 / 16;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid #30363d;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6);
+    background-color: #000;
+}
+
+.project-video-container-mobile video {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+@media (max-width: 480px) {
+    .project-video-container-mobile {
+        max-width: 320px;
+        margin-bottom: 2rem;
+    }
+}
+
+/* --- Par de Vídeos Verticais (Mobile / 9:16 - ex: Grau é Arte) --- */
+.project-videos-mobile-pair {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+    flex-wrap: wrap;
+}
+
+.video-mobile-item {
+    width: 100%;
+    max-width: 320px;
+    aspect-ratio: 9 / 16;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid #30363d;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6);
+    background-color: #000;
+}
+
+.video-mobile-item video {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+@media (max-width: 680px) {
+    .project-videos-mobile-pair {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .video-mobile-item {
+        max-width: 300px;
+    }
+}
+
 /* --- Galeria de Imagens de Projetos --- */
 .project-gallery {
     display: flex;
@@ -614,6 +691,45 @@ footer {
     }
     .gallery-screens-5 .gallery-item:nth-child(n) {
         grid-column: span 1;
+    }
+}
+
+/* --- Galeria 3x3 (Grau é Arte) --- */
+.gallery-screens-3x3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.gallery-screens-3x3 .gallery-item {
+    aspect-ratio: 16 / 9;
+}
+
+.gallery-screens-3x3 .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 900px) {
+    .gallery-screens-3x3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .gallery-screens-3x3 .gallery-item:first-child {
+        grid-column: span 2;
+        aspect-ratio: 21 / 9;
+    }
+}
+
+@media (max-width: 600px) {
+    .gallery-screens-3x3 {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+    .gallery-screens-3x3 .gallery-item:first-child {
+        grid-column: span 1;
+        aspect-ratio: 16 / 9;
     }
 }
 
@@ -738,7 +854,9 @@ footer {
     font-size: 1.2rem;
 }
 
-.platform-btn.playstore:hover {
+.platform-btn.playstore:hover,
+.platform-btn.appstore:hover,
+.platform-btn.steam:hover {
     border-color: #3bccff;
     color: #3bccff;
 }
@@ -798,4 +916,203 @@ footer {
     text-transform: uppercase;
     letter-spacing: 0.5px;
     line-height: 1.3;
+}
+
+/* ==========================================================================
+   Modal Lightbox de Imagens (Estilo Steam / Google Play)
+   ========================================================================== */
+.gallery-item,
+.gallery-banner {
+    cursor: pointer;
+}
+
+.gallery-item img,
+.gallery-banner img {
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.gallery-item:hover img,
+.gallery-banner:hover img {
+    filter: brightness(1.08);
+}
+
+.lightbox-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    background-color: rgba(7, 10, 15, 0.94);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    padding: 1.25rem 1rem;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.lightbox-modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Barra Superior */
+.lightbox-header {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #e6edf3;
+    z-index: 10;
+    padding: 0 1rem;
+}
+
+.lightbox-title {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: calc(100% - 60px);
+}
+
+.lightbox-close {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.lightbox-close:hover {
+    background: rgba(255, 75, 75, 0.85);
+    border-color: rgba(255, 75, 75, 1);
+    transform: scale(1.1);
+}
+
+/* Área Central com Imagem e Setas */
+.lightbox-body {
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+    overflow: hidden;
+}
+
+.lightbox-img-wrapper {
+    max-width: 90vw;
+    max-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-img {
+    max-width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* Setas de Navegação (Estilo Google Play / Steam) */
+.lightbox-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(20, 26, 35, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    z-index: 10;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+}
+
+.lightbox-btn:hover {
+    background: var(--accent-color);
+    border-color: var(--accent-color);
+    color: #0d1117;
+    transform: translateY(-50%) scale(1.15);
+}
+
+.lightbox-prev {
+    left: 1.5rem;
+}
+
+.lightbox-next {
+    right: 1.5rem;
+}
+
+/* Barra Inferior / Contador */
+.lightbox-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    font-weight: 500;
+    z-index: 10;
+}
+
+.lightbox-counter {
+    background: rgba(22, 27, 34, 0.85);
+    padding: 0.4rem 1.1rem;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #e6edf3;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+    .lightbox-btn {
+        width: 44px;
+        height: 44px;
+        font-size: 1.15rem;
+    }
+
+    .lightbox-prev {
+        left: 0.5rem;
+    }
+
+    .lightbox-next {
+        right: 0.5rem;
+    }
+
+    .lightbox-img-wrapper {
+        max-width: 96vw;
+        max-height: 75vh;
+    }
+
+    .lightbox-img {
+        max-height: 75vh;
+    }
 }

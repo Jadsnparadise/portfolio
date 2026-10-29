@@ -19,9 +19,9 @@ const translations = {
         nav_contact: "Contato",
 
         /* Seção Início / Apresentação */
-        intro_hello: "Olá, eu sou o <span class='highlight'>Jonas Sena</span>",
+        intro_hello: "Oi, me chamo <span class='highlight'>Jonas Sena</span>",
         intro_role: "Unity Game Developer",
-        intro_desc: "Oi, eu sou o Jonas! Sou Unity Game Developer com 3 anos de experiência.<br><br>Atualmente estou trabalhando na Santos Games no jogo Fixa Brasil e em um novo projeto interno ainda não lançado, além de ter atuado anteriormente no Grau é Arte Online. Também atuo como freelancer na Baladeira Studios, onde contribuí no jogo Refúgio do Banzé com programação de UI e correção de bugs.<br><br>Anteriormente, atuei na DeadPixel Studios no desenvolvimento de dois grandes títulos: o roguelite Machick — participando de todo o processo criativo e técnico desde a concepção até o lançamento comercial — e o jogo de ação Eclipse: Shine of Dawn, onde desenvolvi a IA dos inimigos do zero e representei o estúdio apresentando o jogo diretamente ao público na Brasil Game Show (BGS) em 2023.",
+        intro_desc: "Oi, eu sou Jonas! Sou Unity Game Developer com mais de 3 anos de experiência.<br><br>Atualmente estou trabalhando na Santos Games no jogo Fixa Brasil e em um novo projeto interno ainda não lançado, além de ter atuado anteriormente no Grau é Arte Online. Também atuo como freelancer na Baladeira Studios, onde contribuí no jogo Refúgio do Banzé com programação de UI e correção de bugs.<br><br>Anteriormente, atuei na DeadPixel Studios no desenvolvimento de dois grandes títulos: o roguelite Machick (participando de todo o processo criativo e técnico desde a concepção até o lançamento comercial) e o hack 'n' slash Eclipse: Shine of Dawn, onde contribuí no desenvolvimento da IA dos inimigos do zero junto à equipe e representei o estúdio apresentando o jogo diretamente ao público na Brasil Game Show (BGS) em 2023.",
 
         /* Estatísticas Rápidas (Abaixo da Foto) */
         stat_exp: "Anos de Experiência",
@@ -49,15 +49,15 @@ const translations = {
         /* Seção Projetos (Cards na Home) */
         title_projects: "Projetos em Destaque",
         proj1_title: "Grau é Arte Online",
-        proj1_desc: "Focado na implementação e otimização de sistemas multiplayer em tempo real utilizando Unity Netcode, além do desenvolvimento da física de veículos e animações.",
+        proj1_desc: "Jogo casual e social de motociclismo em 3D para mobile (Android e iOS), com física realista de manobras, exploração de cidade e multiplayer em tempo real.",
         proj2_title: "Fixa Brasil",
-        proj2_desc: "Manutenção e implementação de sistemas de controle de UI, integração de anúncios, Firebase Crashlytics e suporte contínuo para sincronização multiplayer.",
+        proj2_desc: "Jogo casual e simulador automotivo em 3D para mobile (Android), focado na cultura brasileira de carros rebaixados, customização de som e multiplayer online.",
         proj3_title: "Refúgio do Banzé",
-        proj3_desc: "Foco em programação de UI, correção de bugs, polimento de gameplay e desenvolvimento de sistemas autônomos de balanceamento para Game Designers.",
+        proj3_desc: "Jogo de estratégia e Tower Defense em 2D para mobile, com temática histórica e educativa sobre a resistência dos mocambos no Brasil colonial.",
         proj4_title: "Machick",
-        proj4_desc: "Ciclo completo de desenvolvimento. Criação de progressão de fases, geração de inimigos, UI, localização e direção técnica de todo o sistema de áudio.",
+        proj4_desc: "Jogo Vampire Survivors-like, roguelite em 2D para PC (Steam), com criação de varinhas mágicas e combate contra hordas de inimigos.",
         proj5_title: "Eclipse: Shine of Dawn",
-        proj5_desc: "Melhoria nos sistemas de combate e movimentação, integração de áudio e representação do estúdio apresentando o jogo na Brasil Game Show (BGS).",
+        proj5_desc: "Jogo de ação e aventura hack 'n' slash em 3D para PC (Steam), com combate dinâmico fluido, ambientação de fantasia e confrontos contra criaturas místicas.",
 
         /* Tags de Tecnologias e Áreas */
         tag_unity: "Unity",
@@ -83,14 +83,13 @@ const translations = {
         title_experience: "Experiência Profissional",
         exp1_title: "Unity Game Developer - Santos Games",
         exp1_date: "07/2024 - Presente",
-        exp1_desc: "Desenvolvimento de novo projeto interno e manutenção contínua do Fixa Brasil. Anteriormente, atuei na implementação de física de veículos, sistemas de anúncios e otimização de multiplayer com Unity Netcode no Grau é Arte Online.",
+        exp1_desc: "<strong>Fixa Brasil:</strong> Atuação contínua na arquitetura de sistemas, manutenção LiveOps, controle de UI, integração de anúncios, Firebase Crashlytics e sincronização multiplayer em tempo real.<br><br><strong>Grau é Arte Online:</strong> Implementação de física de veículos e manobras, sistemas de monetização/anúncios, otimização de performance e implementação de features multiplayer com Unity Netcode.",
         exp2_title: "Junior Unity Game Developer - Baladeira Studios",
         exp2_date: "07/2024 - Presente",
-        exp2_desc: "Envolvimento direto no jogo Refúgio do Banzé, construindo ferramentas para Game Designers e refinando a programação de UI e gameplay.",
+        exp2_desc: "<strong>Refúgio do Banzé:</strong> Envolvimento direto no desenvolvimento do jogo, construindo ferramentas para Game Designers e refinando a programação de UI e gameplay.",
         exp3_title: "Unity Game Developer - DeadPixel Studios",
-        exp3_desc: "Membro fundador da equipe do jogo Machick. Gerenciamento do ciclo completo, controle de mapas, UI, localização e integração de áudio ponta a ponta.",
-        exp4_title: "Unity Game Developer - DeadPixel Studios",
-        exp4_desc: "Desenvolvimento da IA dos inimigos do zero (State Machine, NavMesh, IK) e integração técnica de áudio com FMOD para o jogo Eclipse: Shine of Dawn. Apresentação oficial do jogo na BGS 2023.",
+        exp3_date: "01/2023 - 06/2024",
+        exp3_desc: "<strong>Machick:</strong> Membro fundador da equipe, atuando no ciclo completo do jogo, controle de mapas procedurais, UI, localização e direção técnica de áudio.<br><br><strong>Eclipse: Shine of Dawn:</strong> Desenvolvimento da IA dos inimigos do zero (State Machine, NavMesh, IK), integração técnica de áudio com FMOD e apresentação oficial do jogo na BGS 2023.",
 
         /* Seção Educação e Contato */
         title_contact: "Educação e Contato",
@@ -140,12 +139,12 @@ const translations = {
         banze_exp_text: "Este projeto marcou meu primeiro contato prático com metodologias ágeis estruturadas, como a utilização do Git Flow e a participação em processos rigorosos de code review. Além do imenso aprendizado técnico e da imersão em boas práticas de versionamento em equipe, foi uma experiência riquíssima e gratificante poder contribuir para o desenvolvimento de um jogo com um propósito educacional voltado para a rica história do Brasil.",
 
         /* --- Projeto: Machick --- */
-        machick_desc: "Derrote um exército fortemente armado de sapos anti-magia e liberte a floresta da destruição. Machick é um jogo casual (roguelite) onde você constrói suas próprias varinhas, sobrevive a hordas de inimigos, coleta XP e seleciona aprimoramentos para ir cada vez mais longe na jornada.",
+        machick_desc: "Derrote um exército fortemente armado de sapos anti-magia e liberte a floresta da destruição. Machick é um jogo Vampire Survivors-like, roguelite onde você constrói suas próprias varinhas, sobrevive a hordas de inimigos, coleta XP e seleciona aprimoramentos para ir cada vez mais longe na jornada.",
         machick_resp_list: "<li>Desenvolvimento de sistemas core de gameplay, incluindo progressão de nível, geração procedural e controle de eventos de mapa, além das mecânicas de movimentação.</li><li>Implementação de algumas funções da interface de usuário (UI) e estruturação de um sistema dinâmico de localização para suportar múltiplos idiomas.</li><li>Liderança e planejamento em conjunto com a equipe de som, atuando na integração técnica de todo o áudio na engine para garantir o 'game feel' ideal.</li><li>Colaboração direta e próxima com outros desenvolvedores, artistas, designers e producers durante todo o ciclo de produção até o lançamento comercial.</li><li>Resolução de bugs complexos, polimento de gameplay e aprimoramento contínuo dos sistemas gerais do jogo.</li>",
         machick_exp_text: "Este foi um marco imenso na minha carreira por ser o meu primeiro jogo comercial lançado. Trabalhando em uma equipe indie dedicada, tive a oportunidade única de participar ativamente de todo o ciclo de vida do projeto: desde as reuniões iniciais de brainstorm e concepção da ideia, passando por todo o desenvolvimento pesado, até o suporte e envio de correções (patches) no pós-lançamento. Essa vivência ponta a ponta expandiu incrivelmente minha visão tanto técnica quanto de produto.",
 
         /* --- Projeto: Eclipse: Shine of Dawn --- */
-        eclipse_desc: "Eclipse: Shine of Dawn é um jogo de ação e aventura com foco em combate fluido e exploração. Desenvolvido para PC pela DeadPixel Studios, o projeto traz uma ambientação rica e desafiadora com mecânicas dinâmicas de batalha contra criaturas místicas.",
+        eclipse_desc: "Eclipse: Shine of Dawn é um jogo de ação e aventura hack 'n' slash com foco em combate fluido e exploração. Desenvolvido para PC pela DeadPixel Studios, o projeto traz uma ambientação rica e desafiadora com mecânicas dinâmicas de batalha contra criaturas místicas.",
         eclipse_resp_list: "<li>Desenvolvimento da IA dos inimigos do zero junto à equipe, arquitetando e implementando comportamentos através de State Machine, NavMesh e IK.</li><li>Correção e polimento de bugs críticos e impeditivos no combate do primeiro boss.</li><li>Integração técnica de áudios e efeitos sonoros utilizando FMOD.</li><li>Colaboração direta e multidisciplinar com outros desenvolvedores, artistas, designers e producers no alinhamento de escopo, arte e mecânicas.</li><li>Apresentação do jogo ao público junto à equipe no maior evento de jogos da América Latina, a Brasil Game Show (BGS).</li><li>Participação em podcasts e criação de conteúdo para divulgação do projeto em mídias sociais.</li>",
         eclipse_exp_text: "Foi minha primeira experiência profissional e um grande marco no meu desenvolvimento como desenvolvedor. Por ser um codebase robusto e em equipe, aprendi imensamente lendo, estudando e participando de code reviews com meus colegas de trabalho. Além do grande salto técnico em sistemas e IA, foi muito gratificante poder contribuir não apenas na programação, mas também apresentar o jogo ao público na BGS e ajudar a construir a comunidade do projeto."
     },
@@ -168,7 +167,7 @@ const translations = {
         /* Intro Section */
         intro_hello: "Hi, I'm <span class='highlight'>Jonas Sena</span>",
         intro_role: "Unity Game Developer",
-        intro_desc: "Hi, I'm Jonas! I'm a Unity Game Developer with 3 years of experience.<br><br>Currently, I work at Santos Games developing and maintaining Fixa Brasil and an unannounced internal project, having previously worked on Grau é Arte Online. I also work as a freelancer at Baladeira Studios, where I contributed to Refúgio do Banzé with UI programming and bug fixing.<br><br>Previously, I worked at DeadPixel Studios on two major titles: the roguelite Machick — participating in the full creative and technical cycle from concept to commercial launch — and the action game Eclipse: Shine of Dawn, where I built enemy AI from scratch and represented the studio showcasing the game to the public at Brasil Game Show (BGS) in 2023.",
+        intro_desc: "Hi, I'm Jonas! I'm a Unity Game Developer with over 3 years of experience.<br><br>Currently, I work at Santos Games developing and maintaining Fixa Brasil and an unannounced internal project, having previously worked on Grau é Arte Online. I also work as a freelancer at Baladeira Studios, where I contributed to Refúgio do Banzé with UI programming and bug fixing.<br><br>Previously, I worked at DeadPixel Studios on two major titles: the roguelite Machick (participating in the full creative and technical cycle from concept to commercial launch) and the hack 'n' slash Eclipse: Shine of Dawn, where I collaborated with the team to develop enemy AI from scratch and represented the studio showcasing the game to the public at Brasil Game Show (BGS) in 2023.",
 
         /* Quick Stats (Below Photo) */
         stat_exp: "Years Experience",
@@ -196,15 +195,15 @@ const translations = {
         /* Projects Section (Home Cards) */
         title_projects: "Featured Projects",
         proj1_title: "Grau é Arte Online",
-        proj1_desc: "Focused on the implementation and optimization of real-time multiplayer systems using Unity Netcode, as well as the development of vehicle physics and animations.",
+        proj1_desc: "A casual 3D motorcycle and social game for mobile (Android & iOS), featuring realistic stunt physics, open city exploration, and real-time multiplayer.",
         proj2_title: "Fixa Brasil",
-        proj2_desc: "Maintenance and implementation of UI control systems, ad integration, Firebase Crashlytics, and continuous support for multiplayer synchronization.",
+        proj2_desc: "A casual 3D automotive simulator for mobile (Android), centered on Brazilian car culture, custom sound systems, and online multiplayer.",
         proj3_title: "Refúgio do Banzé",
-        proj3_desc: "Focused on UI programming, bug fixing, gameplay polishing, and developed autonomous balancing systems for Game Designers.",
+        proj3_desc: "A 2D mobile strategy and Tower Defense game with an educational narrative about the historical resistance of Brazilian mocambos.",
         proj4_title: "Machick",
-        proj4_desc: "Full development cycle from conception to launch. Developed level progression, enemy generation, UI, localization, and directed all audio systems.",
+        proj4_desc: "A 2D Vampire Survivors-like, roguelite game for PC (Steam), featuring custom wand crafting and horde-survival combat.",
         proj5_title: "Eclipse: Shine of Dawn",
-        proj5_desc: "Improved combat and movement systems, integrated game audio, and represented the studio at Brasil Game Show (BGS).",
+        proj5_desc: "A 3D hack 'n' slash action-adventure game for PC (Steam), featuring fluid dynamic combat, fantasy atmosphere, and intense battles against mystical creatures.",
 
         /* Technology & Field Tags */
         tag_unity: "Unity",
@@ -230,14 +229,13 @@ const translations = {
         title_experience: "Professional Experience",
         exp1_title: "Unity Game Developer - Santos Games",
         exp1_date: "07/2024 - Present",
-        exp1_desc: "Developing an unannounced internal project and maintaining Fixa Brasil. Previously worked on vehicle physics, ads, and multiplayer with Unity Netcode on Grau é Arte Online.",
+        exp1_desc: "<strong>Fixa Brasil:</strong> Ongoing system architecture, LiveOps maintenance, UI systems, ad SDK integrations, Firebase Crashlytics, and real-time multiplayer synchronization.<br><br><strong>Grau é Arte Online:</strong> Implementation of vehicle and stunt physics, ad monetization systems, performance optimization, and multiplayer feature implementation using Unity Netcode.",
         exp2_title: "Junior Unity Game Developer - Baladeira Studios",
         exp2_date: "07/2024 - Present",
-        exp2_desc: "Directly involved in the development of Refúgio do Banzé, building tools for Game Designers and polishing UI and gameplay.",
+        exp2_desc: "<strong>Refúgio do Banzé:</strong> Direct involvement in game development, building tools for Game Designers, and polishing UI and gameplay.",
         exp3_title: "Unity Game Developer - DeadPixel Studios",
-        exp3_desc: "Founding team member for Machick. Managed full-cycle development, map control, UI, localization, and end-to-end audio integration.",
-        exp4_title: "Unity Game Developer - DeadPixel Studios",
-        exp4_desc: "Enemy AI architecture (State Machine, NavMesh, IK) and audio integration with FMOD for Eclipse: Shine of Dawn. Officially represented the studio at BGS 2023.",
+        exp3_date: "01/2023 - 06/2024",
+        exp3_desc: "<strong>Machick:</strong> Founding team member, managing full-cycle development, procedural map events, UI, localization, and technical audio direction.<br><br><strong>Eclipse: Shine of Dawn:</strong> Built enemy AI from scratch (State Machine, NavMesh, IK), integrated technical audio with FMOD, and officially showcased the game at BGS 2023.",
 
         /* Education & Contact Section */
         title_contact: "Education & Contact",
@@ -287,12 +285,12 @@ const translations = {
         banze_exp_text: "This project marked my first hands-on experience with structured agile methodologies, such as using Git Flow and participating in rigorous code review processes. Beyond the immense technical learning and team version control best practices, it was an incredibly rich and rewarding experience to contribute to the development of an educational game focused on Brazil's rich history.",
 
         /* --- Project: Machick --- */
-        machick_desc: "Defeat a heavily armed army of anti-magic frogs and free the forest from destruction. Machick is a casual roguelite game where you build your own wands, survive enemy hordes, collect XP, and select upgrades to go further in your journey.",
+        machick_desc: "Defeat a heavily armed army of anti-magic frogs and free the forest from destruction. Machick is a Vampire Survivors-like, roguelite game where you build your own wands, survive enemy hordes, collect XP, and select upgrades to go further in your journey.",
         machick_resp_list: "<li>Developed core gameplay systems, including level progression, procedural map event generation and control, as well as movement mechanics.</li><li>Implemented some User Interface (UI) functions and structured a dynamic localization system to support multiple languages.</li><li>Led and planned alongside the sound team, acting on the technical end-to-end integration of all audio within the engine to ensure the ideal 'game feel'.</li><li>Direct collaboration with fellow developers, artists, designers, and producers across the full production lifecycle up to commercial launch on Steam.</li><li>Resolved complex bugs, polished gameplay, and continuously improved general game systems.</li>",
         machick_exp_text: "This was a massive milestone in my career as it was my first released commercial game. Working within a dedicated indie team, I had the unique opportunity to actively participate in the entire lifecycle of the project: from initial brainstorming and concept meetings, through heavy development, to post-launch support and patching. This end-to-end experience incredibly expanded both my technical and product vision.",
 
         /* --- Project: Eclipse: Shine of Dawn --- */
-        eclipse_desc: "Eclipse: Shine of Dawn is an action-adventure game centered around fluid combat and exploration. Developed for PC by DeadPixel Studios, the project delivers a rich and challenging world featuring dynamic battles against mythical creatures.",
+        eclipse_desc: "Eclipse: Shine of Dawn is a 3D hack 'n' slash action-adventure game centered around fluid combat and exploration. Developed for PC by DeadPixel Studios, the project delivers a rich and challenging world featuring dynamic battles against mythical creatures.",
         eclipse_resp_list: "<li>Co-developed enemy Artificial Intelligence from scratch, architecting and implementing behaviors using State Machine, NavMesh, and IK.</li><li>Fixed and polished critical game-breaking bugs in the first boss combat encounter.</li><li>Integrated dynamic audio systems and sound effects utilizing FMOD.</li><li>Direct multidisciplinary collaboration with developers, artists, designers, and producers to align combat mechanics, assets, and delivery milestones.</li><li>Showcased and presented the game alongside the team to the public at Brasil Game Show (BGS), Latin America's largest gaming event.</li><li>Participated in podcasts and produced social media content to promote the game and build community engagement.</li>",
         eclipse_exp_text: "This was my first professional experience and a major milestone in my growth as a developer. Working on a large-scale team codebase allowed me to learn immensely through reading, studying, and participating in code reviews with fellow developers. Beyond the significant technical leap in gameplay systems and AI, it was deeply rewarding to contribute not only to programming, but also to showcase the game to players at BGS and help build the project's community."
     }
