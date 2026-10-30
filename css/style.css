@@ -74,6 +74,26 @@ nav {
     color: var(--accent-color);
 }
 
+.nav-links a.nav-resume-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 6px;
+    background-color: rgba(88, 166, 255, 0.12);
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+    font-size: 0.95rem;
+    transition: all 0.25s ease;
+}
+
+.nav-links a.nav-resume-btn:hover {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(88, 166, 255, 0.35);
+}
+
 .lang-buttons button {
     background-color: transparent;
     border: 1px solid var(--accent-color);
@@ -98,13 +118,32 @@ nav {
 
 /* --- Seções Globais --- */
 section {
-    padding: 100px 5% 50px;
-    min-height: 100vh;
+    padding: 60px 5% 40px;
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    scroll-margin-top: 80px;
+}
+
+#inicio {
+    min-height: 100vh;
+    padding-top: 100px;
     justify-content: center;
+}
+
+#projetos {
+    padding-top: 70px;
+}
+
+#experiencia {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+#contato {
+    padding-top: 20px;
+    padding-bottom: 50px;
 }
 
 .section-title {
@@ -146,6 +185,53 @@ section {
     font-size: 1.1rem;
     max-width: 650px;
     color: #c9d1d9;
+}
+
+/* Botões de Ação na Apresentação (Hero CTA) */
+.intro-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.8rem;
+    flex-wrap: wrap;
+}
+
+.cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.75rem 1.4rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    cursor: pointer;
+}
+
+.cta-btn.primary {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    border: 2px solid var(--accent-color);
+    box-shadow: 0 4px 14px rgba(88, 166, 255, 0.35);
+}
+
+.cta-btn.primary:hover {
+    background-color: #79b8ff;
+    border-color: #79b8ff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(88, 166, 255, 0.5);
+}
+
+.cta-btn.secondary {
+    background-color: transparent;
+    color: var(--text-color);
+    border: 2px solid #30363d;
+}
+
+.cta-btn.secondary:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+    transform: translateY(-2px);
 }
 
 /* Estilos da Foto de Perfil */
@@ -234,6 +320,19 @@ section {
 
     .intro-content h1 {
         font-size: 3rem; /* Reduz um pouco o título no celular */
+    }
+
+    .intro-actions {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        gap: 0.8rem;
+        font-size: 0.9rem;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
@@ -397,6 +496,10 @@ section {
 .timeline-item {
     margin-bottom: 2rem;
     position: relative;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0.5rem;
 }
 
 .timeline-item::before {

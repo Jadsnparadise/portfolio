@@ -61,6 +61,15 @@ const I18n = {
             button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
         });
 
+        // Atualiza dinamicamente o link do currículo para a versão correspondente (PT / EN)
+        const resumeFile = (translations[lang] && translations[lang].resume_file)
+            ? translations[lang].resume_file
+            : (lang === 'en' ? 'cv Jonas Sena EN 2026.docx.pdf' : 'cv Jonas Sena PT 2026.docx.pdf');
+
+        document.querySelectorAll('[data-resume-link]').forEach(element => {
+            element.setAttribute('href', encodeURI(resumeFile));
+        });
+
         // Emite evento para outros scripts que precisem reagir à troca de idioma
         window.dispatchEvent(new CustomEvent('languageChanged', { detail: { lang } }));
     },

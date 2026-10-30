@@ -3,6 +3,7 @@
  * Controla animações de entrada e interações de UI.
  */
 document.addEventListener('DOMContentLoaded', () => {
+
     // Observador de interseção para animações de fade-in ao rolar a página
     const observerOptions = {
         root: null,
