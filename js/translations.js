@@ -22,7 +22,7 @@ const translations = {
         /* Botões de Ação */
         btn_resume: "Ver Currículo",
         btn_contact_me: "Contato",
-        resume_file: "cv Jonas Sena PT 2026.docx.pdf",
+        resume_file: "cv Jonas Sena PT 2026.pdf",
 
         /* Seção Início / Apresentação */
         intro_hello: "Oi, me chamo <span class='highlight'>Jonas Sena</span>",
@@ -184,7 +184,7 @@ const translations = {
         /* Action Buttons */
         btn_resume: "View Resume",
         btn_contact_me: "Contact",
-        resume_file: "cv Jonas Sena EN 2026.docx.pdf",
+        resume_file: "cv Jonas Sena EN 2026.pdf",
 
         /* Intro Section */
         intro_hello: "Hi, I'm <span class='highlight'>Jonas Sena</span>",

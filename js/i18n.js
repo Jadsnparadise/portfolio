@@ -64,7 +64,7 @@ const I18n = {
         // Atualiza dinamicamente o link do currículo para a versão correspondente (PT / EN)
         const resumeFile = (translations[lang] && translations[lang].resume_file)
             ? translations[lang].resume_file
-            : (lang === 'en' ? 'cv Jonas Sena EN 2026.docx.pdf' : 'cv Jonas Sena PT 2026.docx.pdf');
+            : (lang === 'en' ? 'cv Jonas Sena EN 2026.pdf' : 'cv Jonas Sena PT 2026.pdf');
 
         document.querySelectorAll('[data-resume-link]').forEach(element => {
             element.setAttribute('href', encodeURI(resumeFile));
