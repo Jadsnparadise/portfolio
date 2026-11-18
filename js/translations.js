@@ -27,7 +27,7 @@ const translations = {
         /* Seção Início / Apresentação */
         intro_hello: "Oi, me chamo <span class='highlight'>Jonas Sena</span>",
         intro_role: "Game Engineer",
-        intro_desc: "Sou Game Engineer com mais de 3 anos de experiência.<br><br>Atualmente estou trabalhando na Santos Games no jogo Fixa Brasil e em um novo projeto interno ainda não lançado, além de ter atuado anteriormente no Grau é Arte Online. Também atuei como freelancer na Baladeira Studios, onde contribuí no jogo Refúgio do Banzé com programação de UI e correção de bugs.<br><br>Anteriormente, atuei na DeadPixel Studios no desenvolvimento de dois grandes títulos: o roguelite Machick, participando de todo o processo criativo e técnico desde a concepção até o lançamento comercial, e o hack 'n' slash Eclipse: Shine of Dawn, onde contribuí no desenvolvimento da IA dos inimigos do zero junto à equipe e representei o estúdio apresentando o jogo diretamente ao público na Brasil Game Show em 2023.",
+        intro_desc: "Sou Game Engineer com mais de 3 anos de experiência. Atuei na DeadPixel Studios no desenvolvimento de dois grandes títulos: o roguelite Machick, participando de todo o processo criativo e técnico desde a concepção até o lançamento comercial, e o hack 'n' slash Eclipse: Shine of Dawn, onde contribuí no desenvolvimento da IA dos inimigos do zero junto à equipe e representei o estúdio apresentando o jogo diretamente ao público na Brasil Game Show em 2023. Também atuei como freelancer na Baladeira Studios, onde contribuí no jogo Refúgio do Banzé com programação de UI e correção de bugs.",
 
         /* Estatísticas Rápidas (Abaixo da Foto) */
         stat_exp: "Anos de Experiência",
@@ -189,7 +189,7 @@ const translations = {
         /* Intro Section */
         intro_hello: "Hi, I'm <span class='highlight'>Jonas Sena</span>",
         intro_role: "Game Engineer",
-        intro_desc: "I'm a Game Engineer with over 3 years of experience.<br><br>Currently, I work at Santos Games developing and maintaining Fixa Brasil and an unannounced internal project, having previously worked on Grau é Arte Online. I also worked as a freelancer at Baladeira Studios, where I contributed to Refúgio do Banzé with UI programming and bug fixing.<br><br>Previously, I worked at DeadPixel Studios on two major titles: the roguelite Machick, participating in the full creative and technical cycle from concept to commercial launch, and the hack 'n' slash Eclipse: Shine of Dawn, where I collaborated with the team to develop enemy AI from scratch and represented the studio showcasing the game to the public at Brasil Game Show in 2023.",
+        intro_desc: "I'm a Game Engineer with over 3 years of experience. I worked at DeadPixel Studios on two major titles: the roguelite Machick, participating in the full creative and technical cycle from concept to commercial launch, and the hack 'n' slash Eclipse: Shine of Dawn, where I collaborated with the team to develop enemy AI from scratch and represented the studio showcasing the game to the public at Brasil Game Show in 2023. I also worked as a freelancer at Baladeira Studios, where I contributed to Refúgio do Banzé with UI programming and bug fixing.",
 
         /* Quick Stats (Below Photo) */
         stat_exp: "Years Experience",
